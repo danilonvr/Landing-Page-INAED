@@ -1,6 +1,6 @@
-import Head from 'next/head'
-
-
+import Head from "next/head";
+import Button from "components/Button";
+import "../styles/button.css"
 export default function Home() {
   return (
     <>
@@ -10,10 +10,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+
+      <main className="bg-gray-100 container px-20 py-6 w-full">
+        <header className="">
+          <div className="flex justify-between">
+            <div>
+              <img src="/assets/logos/logo.svg" alt="Logo" />
+            </div>
+            <div className="flex items-center">
+              <div className="mr-4">
+              <Button text='Quero me inscrever agora!'/>
+              </div>
+            </div>
+          </div>
+        </header>
+      </main>
     </>
-  )
+  );
 }
