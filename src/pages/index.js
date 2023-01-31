@@ -1,6 +1,11 @@
 import Head from "next/head";
 import Button from "components/Button";
+import styled from "styled-components";
 
+export const Title = styled.h1`
+  font-size: 50px;
+  color: red;
+`;
 export default function Home() {
   return (
     <>
@@ -13,29 +18,35 @@ export default function Home() {
 
       <main className="bg-gray-100 container px-20 py-6 w-full">
         <section className="hero-section">
-        <header className="">
-          <div className="flex justify-between items-center">
-            <div>
-              <img src="/assets/logos/logo.svg" alt="Logo" />
+          <header className="">
+            <Title>Programa de Pós Graduação em Gestão de Saúde</Title>
+            <div className="flex justify-between items-center">
+              <div>
+                <img src="/assets/logos/logo.svg" alt="Logo" />
+              </div>
+              <div>
+                <img src="/assets/logos/logo-pos.svg" alt="Logo Pós" />
+              </div>
+              <div>
+                <Button text="Quero me inscrever agora!" />
+              </div>
             </div>
-            <div>
-              <img src="/assets/logos/logo-pos.svg" alt="Logo Pós" />
+          </header>
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-6 flex flex-col justify-center">
+              <h1 className="text-4xl font-bold">
+                Veja no que você precisa investir para ser um profissional de
+                sucesso em um negócio de saúde
+              </h1>
+              <h3 className="text-2xl">
+                (Spoiler: a resposta já está neste título)
+              </h3>
+              <Button text="Faça a sua inscrição agora mesmo!" className="" />
             </div>
-            <div>
-              <Button text='Quero me inscrever agora!'/>
+            <div className="col-span-6">
+              <img src="/assets/images/doctor.png" alt="Imagem Doutor" />
             </div>
           </div>
-        </header>
-        <div className="grid grid-cols-12 gap-6">
-          <div className="col-span-6 flex flex-col justify-center">
-          <h1 className="text-4xl font-bold">Veja no que você precisa investir para ser um profissional de sucesso em um negócio de saúde</h1>
-          <h3 className="text-2xl">(Spoiler: a resposta já está neste título)</h3>
-          <Button text='Faça a sua inscrição agora mesmo!' className=""/>
-        </div>
-        <div className="col-span-6">
-          <img src="/assets/images/doctor.png" alt="Imagem Doutor" />
-        </div>
-        </div>
         </section>
       </main>
     </>
