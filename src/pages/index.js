@@ -1,11 +1,19 @@
 import Head from "next/head";
 import Button from "components/Button";
 import styled from "styled-components";
+import Timer from "components/Timer";
 
 export default function Home() {
+  const HeroSection = styled.section`
+    background-image: url("/assets/backgrounds/HeroSectionImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  `;
   const Glass = styled.div`
-    background-color: ${(props) => props.background};
-    opacity: 100%;
+    background-color: ${(props) =>
+      props.background || "rgba(255, 255, 255, 1)"};
     padding: 1rem 1.5rem;
     border-radius: 12px;
     color: #fff;
@@ -23,15 +31,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gray-100 container px-20 py-6 w-full">
-        <section>
+      <main>
+        <HeroSection className="px-20 py-6 ">
           <header>
             <div className="flex justify-between items-center">
               <div>
-                <img src="/assets/logos/logo.svg" alt="Logo" />
+                <img src="/assets/logos/logo.svg" alt="Logo" className="" />
               </div>
               <div>
-                <img src="/assets/logos/logo-pos.svg" alt="Logo Pós" />
+                <img
+                  src="/assets/logos/logo-pos.svg"
+                  alt="Logo Pós"
+                  className=""
+                />
               </div>
               <div>
                 <Button text="Quero me inscrever agora!" />
@@ -40,16 +52,16 @@ export default function Home() {
           </header>
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-5 flex flex-col justify-center">
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
                 sucesso em um negócio de saúde
               </h1>
-              <h3 className="text-2xl py-6">
+              <h3 className="text-2xl py-6 text-lightColor">
                 (Spoiler: a resposta já está neste título)
               </h3>
               <Button text="Faça a sua inscrição agora mesmo!" />
               <Glass
-                background="red"
+                background="rgba(255, 255, 255, 0.25)"
                 className="my-4 flex font-bold justify-center"
               >
                 <div className="flex items-center">
@@ -70,12 +82,28 @@ export default function Home() {
                   <span>Início previsto: 14/04/2023</span>
                 </div>
               </Glass>
+              <div className="col-span-6">
+                <Glass
+                  background="rgba(33, 39, 56, 0.25)"
+                  className="flex flex-col justify-center items-center"
+                >
+                  <Timer endDate="2023-04-14T23:59:59" />
+                  <span className="mt-2 font-bold text-base">
+                    Para você garantir a sua vaga. Não perca!
+                  </span>
+                </Glass>
+              </div>
             </div>
-            <div className="col-span-6">
-              <img src="/assets/images/doctor.png" alt="Imagem Doutor" />
+
+            <div className="col-start-8 col-span-7">
+              <img
+                src="/assets/images/doctor.png"
+                alt="Imagem Doutor"
+                className="w-fit"
+              />
             </div>
           </div>
-        </section>
+        </HeroSection>
       </main>
     </>
   );
