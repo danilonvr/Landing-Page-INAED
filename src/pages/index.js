@@ -2,7 +2,7 @@ import Head from "next/head";
 import Button from "components/Button";
 import styled from "styled-components";
 import Timer from "components/Timer";
-
+import { Arrow } from "components/ArrowDivider";
 export default function Home() {
   const HeroSection = styled.section`
     background-image: url("/assets/backgrounds/HeroSectionImage.png");
@@ -33,8 +33,8 @@ export default function Home() {
 
       <main>
         <HeroSection className="px-4 py-4 md:px-20 md:py-6 ">
-          <header className="bg-lightColor md:bg-transparent">
-            <div className="flex justify-between items-center">
+          <header>
+            <div className="flex lg:justify-between items-center">
               <div>
                 <img
                   src="/assets/logos/logo.svg"
@@ -43,16 +43,20 @@ export default function Home() {
                 />
               </div>
               <div>
-                <img src="/assets/logos/logo.svg" alt="Logo Pós" className="" />
+                <img
+                  src="/assets/logos/logo.svg"
+                  alt="Logo Pós"
+                  className="w-2/3"
+                />
               </div>
-              <div>
+              <div className="hidden md:contents">
                 <Button text="Quero me inscrever agora!" />
               </div>
             </div>
           </header>
           <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
             <div className="flex flex-col justify-center col-span-4 md:col-span-8 lg:col-span-5">
-              <h1 className="text-4xl font-bold text-primaryGreen">
+              <h1 className="text-3xl lg:text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
                 sucesso em um negócio de saúde
               </h1>
@@ -100,6 +104,7 @@ export default function Home() {
             </div>
           </div>
         </HeroSection>
+        <Arrow />
       </main>
     </>
   );

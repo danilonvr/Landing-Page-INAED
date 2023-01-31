@@ -15,4 +15,7 @@ export const DefaultButton = styled.button`
     color: #fff;
     transform: scale(1.05);
   }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
