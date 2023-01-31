@@ -49,7 +49,7 @@ const Timer = ({ endDate }) => {
   return (
     <>
     <div className='flex items-center'>
-        <span className='text-2xl font-bold mr-4'>Restam apenas:</span>
+        <span className='text-base md:text-2xl font-bold mr-4'>Restam apenas:</span>
         <TimerDiv>
             <span className='text-2xl font-bold mb-2'>
             {timeLeft.days}

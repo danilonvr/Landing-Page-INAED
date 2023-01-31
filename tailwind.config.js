@@ -16,6 +16,7 @@ module.exports = {
       lightColor: "#FFF2F1",
       secondaryGreen: "#0B6E4F",
       secondaryBlue: "#0F3843",
+      transparent: "transparent",
     },
     fontSize: {
       sm: "0.8rem",

@@ -32,26 +32,26 @@ export default function Home() {
       </Head>
 
       <main>
-        <HeroSection className="px-20 py-6 ">
-          <header>
+        <HeroSection className="px-4 py-4 md:px-20 md:py-6 ">
+          <header className="bg-lightColor md:bg-transparent">
             <div className="flex justify-between items-center">
               <div>
-                <img src="/assets/logos/logo.svg" alt="Logo" className="" />
+                <img
+                  src="/assets/logos/logo.svg"
+                  alt="Logo"
+                  className="hidden lg:block"
+                />
               </div>
               <div>
-                <img
-                  src="/assets/logos/logo-pos.svg"
-                  alt="Logo Pós"
-                  className=""
-                />
+                <img src="/assets/logos/logo.svg" alt="Logo Pós" className="" />
               </div>
               <div>
                 <Button text="Quero me inscrever agora!" />
               </div>
             </div>
           </header>
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-5 flex flex-col justify-center">
+          <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
+            <div className="flex flex-col justify-center col-span-4 md:col-span-8 lg:col-span-5">
               <h1 className="text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
                 sucesso em um negócio de saúde
@@ -88,19 +88,15 @@ export default function Home() {
                   className="flex flex-col justify-center items-center"
                 >
                   <Timer endDate="2023-04-14T23:59:59" />
-                  <span className="mt-2 font-bold text-base">
+                  <span className="hidden md:block md:mt-2 font-bold text-base">
                     Para você garantir a sua vaga. Não perca!
                   </span>
                 </Glass>
               </div>
             </div>
 
-            <div className="col-start-8 col-span-7">
-              <img
-                src="/assets/images/doctor.png"
-                alt="Imagem Doutor"
-                className="w-fit"
-              />
+            <div className="hidden lg:block col-start-8 col-span-7">
+              <img src="/assets/images/doctor.png" alt="Imagem Doutor" />
             </div>
           </div>
         </HeroSection>
