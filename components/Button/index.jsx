@@ -1,10 +1,11 @@
 import React from 'react'
+import { DefaultButton } from './style'
 const Button = (props) => {
   return (
     <>
-    <button>
+    <DefaultButton>
         {props.text}
-    </button>
+    </DefaultButton>
     </>
   )
 }
