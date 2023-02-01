@@ -117,10 +117,10 @@ export default function Home() {
               <h3 className="text-2xl py-6 text-lightColor">
                 (Spoiler: a resposta já está neste título)
               </h3>
-              <a className="mb-6 md:mb-0" href="https://www.google.com">
-                <Button text="Faça a sua inscrição agora mesmo!" />
-              </a>
-
+              <Button
+                href="https://google.com"
+                text="Faça a sua inscrição agora mesmo!"
+              />
               <Glass
                 background="rgba(255, 255, 255, 0.25)"
                 className="my-4 flex font-bold justify-center"

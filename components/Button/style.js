@@ -10,6 +10,7 @@ export const DefaultButton = styled.button`
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  width: 100%;
   &:hover {
     background-color: #212738;
     color: #fff;
