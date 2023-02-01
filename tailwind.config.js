@@ -27,7 +27,12 @@ module.exports = {
       "4xl": "2.5rem",
       "5xl": "3.052rem",
     },
-    extend: {},
+    extend: {
+      screens: {
+        '125%': {'min': '1530px', 'max': '1919px'},
+      // => @media (min-width: 1530px and max-width: 1919px) { ... }
+      }
+    },
   },
   plugins: [],
 };

@@ -18,6 +18,9 @@ export default function Home() {
     @media screen and (min-width: 1440px) {
       height: 670px;
     }
+    @media screen and (min-width: 1536px) and (max-width: 1920px) {
+      height: 100vh;
+    }
     @media screen and (min-width: 1920px) {
       height: 831px;
     }
@@ -67,7 +70,8 @@ export default function Home() {
       margin-bottom: 0.5rem;
       width: 48px;
     }
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 1536px) {
+      max-width: 350px;
       margin-bottom: 1.5rem;
       span {
         text-align: center;
@@ -84,7 +88,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <HeroSection className="px-4 py-4 md:px-20 md:py-6 ">
+        <HeroSection className="px-4 py-4 md:px-20 md:py-6">
           <header>
             <div className="flex lg:justify-between items-center">
               <div>
@@ -102,15 +106,13 @@ export default function Home() {
                 />
               </div>
               <div className="hidden md:contents">
-                <a className="mb-6 md:mb-0" href="https://www.google.com">
-                  <Button text="Quero me inscrever agora!" />
-                </a>
+                  <Button href="https://www.google.com" text="Quero me inscrever agora!" />
               </div>
             </div>
           </header>
           <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-4 md:gap-6">
-            <div className="flex flex-col justify-center col-span-4 md:col-span-8 xl:col-span-5">
-              <h1 className="text-3xl lg:text-4xl font-bold text-primaryGreen">
+            <div className="flex flex-col justify-center col-span-4 md:col-span-8 xl:col-span-5 125%:col-span-7">
+              <h1 className="text-3xl 125%:text-3xl lg:text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
                 sucesso em um negócio de saúde
               </h1>
@@ -123,7 +125,7 @@ export default function Home() {
               />
               <Glass
                 background="rgba(255, 255, 255, 0.25)"
-                className="my-4 flex font-bold justify-center"
+                className=" flex font-bold justify-center"
               >
                 <div className="flex items-center">
                   <img
@@ -156,11 +158,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden xl:block col-start-8 col-span-7">
+            <div className="hidden 2xl:inline col-start-8 col-span-7 125%:col-start-9 ">
               <img
                 src="/assets/images/doctor.png"
                 alt="Imagem Doutor"
-                className="h-fit"
+                className="h-fit object-cover" 
               />
             </div>
           </div>
@@ -253,7 +255,7 @@ export default function Home() {
 
         <Section className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center lg:py-10">
-            <h2 className="text-2xl lg:text-3xl font-bold text-darkColor">
+            <h2 className="text-2xl lg:text-3xl text-center font-bold text-darkColor">
               Não seria ótimo ter as rédeas do próprio negócio e da própria
               carreira?
             </h2>
@@ -301,7 +303,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
-            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6">
+            <div className="col-span-4 md:col-span-8 lg:col-span-6 125%:col-span-7 lg:col-start-2 lg:col-end-6 125%:col-start-2">
               <TextFrame className="2xl:">
                 <p className="text-darkColor leading-5 mb-8">
                   Dra Carla enfim entendeu que não estava pronta para vencer os
@@ -328,8 +330,8 @@ export default function Home() {
                 </p>
               </TextFrame>
             </div>
-            <div className="hidden lg:inline lg:col-span-6 lg:col-start-8 lg:col-end-12">
-              <img src="/assets/images/doctor-smiling.png" alt="Imagem Carla" />
+            <div className="hidden lg:inline lg:col-span-6 125%:col-span-5 125%:col-start-9 lg:col-start-8 lg:col-end-12">
+              <img src="/assets/images/doctor-smiling.png" alt="Imagem doutor" />
             </div>
           </div>
         </Section>
@@ -547,7 +549,7 @@ export default function Home() {
         </Section>
         <Section backgroundImage="./assets/backgrounds/Infographic-bg.png">
           <div className="bg-darkColor flex items-center lg:relative">
-            <div className="py-4 lg:py-6 px-4 lg:px-20 lg:max-w-4xl 2xl:max-w-6xl">
+            <div className="py-4 lg:py-6 px-4 lg:px-20 lg:max-w-2xl 2xl:max-w-3xl">
               <h2 className="text-2xl text-center md:text-start  lg:text-4xl font-bold text-lightColor mb-6 lg:mb-10">
                 Investimento
               </h2>
@@ -597,27 +599,20 @@ export default function Home() {
               </Glass>
               <Glass
                 background="rgba(15, 56, 67, 0.7)"
-                className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:absolute lg:-top-16 lg:right-20 2xl:"
+                className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:absolute lg:-top-10 lg:right-10"
               >
                 <img src="./assets/logos/logo.svg" className="mb-8 mt-20" />
-                <h2 className="text-4xl text-primaryGreen font-bold mb-10">
+                <h2 className="text-2xl 2xl:text-3xl text-primaryGreen font-bold mb-10">
                   OFERTA EXCLUSIVA
                 </h2>
                 <span className="text-2xl mb-4">
                   3x de{" "}
-                  <span className="text-4xl font-bold ">R$ 12.593,70</span>
+                  <span className="text-2xl 2xl:text-3xl font-bold ">R$ 12.593,70</span>
                 </span>
                 <span className="text-base mb-10">OU R$ 37.781,10 À VISTA</span>
-                <a
-                  href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/"
-                  className="mb-4"
-                >
-                  <Button text="QUERO ME INSCREVER AGORA" />
-                </a>
-                <a href="google.com" className="mb-6">
-                  <Button text="FALE CONOSCO VIA WHATSAPP" />
-                </a>
-                <span className="text-2xl text-primaryBlue font-bold mb-4">
+                  <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA" />
+                  <Button href="google.com" text="FALE CONOSCO VIA WHATSAPP" />
+                <span className="text-2xl text-primaryBlue font-bold my-4">
                   Garanta logo a sua vaga
                 </span>
                 <span className="text-base text-lightColor font-bold mb-8">
@@ -632,15 +627,10 @@ export default function Home() {
             </h2>
             <span className="text-2xl font-bold mt-4">3x de R$ 12.593,70</span>
             <span className="text-base mt-2 mb-8">OU R$ 37.781,10 À VISTA</span>
-            <a
-              href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/"
-              className="mb-4"
-            >
-              <Button text="QUERO ME INSCREVER AGORA" />
-            </a>
-            <a href="google.com" className="mb-4">
-              <Button text="FALE CONOSCO VIA WHATSAPP" />
-            </a>
+              <div className="flex justify-around">
+              <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA"/>
+              <Button href="https://google.com" text="FALE CONOSCO VIA WHATSAPP" />
+              </div>
             <span className="text-2xl text-lightColor font-bold mb-2">
               Garanta logo a sua vaga
             </span>

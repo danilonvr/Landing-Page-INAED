@@ -9,4 +9,7 @@ export const TimerDiv = styled.div`
   border-radius: 12px;
   color: #fff;
   margin-right: 1rem;
+  @media screen and (min-width: 1536px) and (max-width: 1920px) {
+      
+    }
 `;
