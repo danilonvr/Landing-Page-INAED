@@ -3,17 +3,22 @@ import Button from "components/Button";
 import styled from "styled-components";
 import Timer from "components/Timer";
 import { Arrow } from "components/ArrowDivider";
+import VideoGrid from "components/Video";
 export default function Home() {
   const HeroSection = styled.section`
     background-image: url("/assets/backgrounds/HeroSectionImage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
+    @media screen and (max-width: 768px) {
+      height: 100%;
+    }
   `;
   const Glass = styled.div`
     background-color: ${(props) =>
       props.background || "rgba(255, 255, 255, 1)"};
+    backdrop-filter: blur(7.5px);
     padding: 1rem 1.5rem;
     border-radius: 12px;
     color: #fff;
@@ -21,7 +26,48 @@ export default function Home() {
   const VerticalLine = styled.div`
     border-left: 1px solid #fff;
   `;
+  const Section = styled.section`
+    background-color: ${(props) => props.background || ""};
+    background-image: url("${(props) => props.backgroundImage || ""}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      margin: 1rem 0;
+    }
+  `;
+  const TextFrame = styled.div`
+    background-color: ${(props) =>
+      props.backgroundColor || "rgba(15, 56, 67, 0.25)"};
+    padding: 1.5rem 1rem;
+    backdrop-filter: blur(7.5px);
+    border-radius: 12px;
+    height: 100%;
+
+    @media screen and (min-width: 1920px) {
+      display: flex;
+      flex-direction: column;
+    }
+  `;
+  const IconFrame = styled(TextFrame)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 570px;
+    img {
+      margin-bottom: 0.5rem;
+      width: 48px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 1.5rem;
+      span {
+        text-align: center;
+      }
+    }
+  `;
   return (
     <>
       <Head>
@@ -105,6 +151,390 @@ export default function Home() {
           </div>
         </HeroSection>
         <Arrow />
+        <Section className="px-4 py-4 md:px-20 md:py-6">
+          <div className="flex justify-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor">
+              REFLITA UM POUCO
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
+            <div className="hidden lg:inline md:col-span-8 lg:col-span-5">
+              <img src="/assets/images/carla.png" alt="Imagem Carla" />
+            </div>
+            <div className="col-span-4 md:col-span-8 lg:col-span-7 lg:col-start-7 lg:col-end-11 lg:mt-[72px]">
+              <p className="text-base leading-5 py-6 text-darkColor">
+                Caro(a) profissional de saúde, Já se foi o tempo em que só se
+                ter uma boa qualificação técnica era o suficiente para ter uma
+                carreira sólida e tranquila. Obviamente, hoje, com a maior
+                competitividade do mercado, é necessário que o profissional seja
+                mais estratégico nas suas decisões de carreira. Você e a Dra.
+                Carla, como bons profissionais que são, prezam por anos de muito
+                estudo e dedicação na sua especialidade como ponto de partida.
+              </p>
+
+              <p className="text-base leading-5 text py-6 text-darkColor">
+                Dra. Carla tem altíssima qualificação na sua especialidade.
+                Desde o início da carreira, decidiu abrir sua própria clínica
+                para exercer a profissão que ama. Pegou suas economias e de seu
+                esposo para abrir o empreendimento. Como ela tem muitas
+                aspirações para o futuro, também aceitou a oportunidade de
+                trabalhar em um grande hospital.
+              </p>
+              <p className="text-base leading-5 py-6 text-darkColor">
+                O nome da Dra. Carla é fictício, mas os fatos que irei narrar na
+                sua trajetória provavelmente não parecerão mera coincidência pra
+                você. Nesta história, ela é uma médica mas facilmente poderia
+                ser uma cirurgiã dentista, uma enfermeira, uma fisioterapeuta ou
+                uma terapeuta ocupacional. Após alguns anos de exercício da
+                profissão ela começa a fazer algumas reflexões…
+              </p>
+            </div>
+          </div>
+        </Section>
+        <Arrow />
+        <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
+          <div className="flex justify-center">
+            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor">
+              TEMPO É DINHEIRO OU DINHEIRO É TEMPO?
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:mb-[72px]">
+            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6 lg:mt-[72px]">
+              <p className="text-base leading-5 py-6 text-lightColor">
+                Dra. Carla atende cuidadosamente seus pacientes na sua sala de
+                consultório desde a hora da chegada até o final do expediente,
+                com a convicção que seu trabalho está trazendo conforto e
+                segurança para a família e tranquilidade financeira para reduzir
+                o ritmo e curtir a vida no futuro.
+              </p>
+
+              <p className="text-base leading-5 text py-6 text-lightColor">
+                Dra Carla tem tempo para todos os seus pacientes, mas para
+                qualquer outra coisa, alega não ter tempo. Se ela não consegue
+                se envolver como gostaria nos problemas domésticos, imagina se
+                envolver com as questões administrativas da clínica, que fica à
+                cargo da secretária.
+              </p>
+              <p className="text-base leading-5 py-6 text-lightColor">
+                Certo dia, Dra Carla resolveu parar e analisar as contas da
+                clínica. Percebeu que até então não tinha devolvido o
+                investimento do marido, não tinha se pagado como investidora e,
+                pior, por muitas vezes tirou dinheiro da sua atividade no
+                hospital para fechar as contas da clínica, ou seja, estava
+                pagando para trabalhar. Ela entendeu que tinha investido todo
+                seu tempo para ganhar dinheiro, mas que nunca tinha dinheiro o
+                suficiente para lhe proporcionar tempo de qualidade. 
+              </p>
+              <p className="text-base leading-5 py-6 text-lightColor">
+                Quanto tempo e esforço Dra Carla poderia ter poupado se tivesse
+                gerenciado melhor seu negócio? Não seria ótimo ter as rédeas do
+                próprio negócio e da própria carreira?
+              </p>
+            </div>
+            <div className="hidden lg:inline md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px]">
+              <img src="/assets/images/tempodinheiro.png" alt="Imagem Carla" />
+            </div>
+          </div>
+        </Section>
+        <Arrow />
+        <Section className="px-4 py-4 md:px-20 md:py-6">
+          <div className="flex justify-center">
+            <h2 className="text-2xl lg:text-3xl font-bold text-darkColor">
+              Não seria ótimo ter as rédeas do próprio negócio e da própria
+              carreira?
+            </h2>
+          </div>
+        </Section>
+        <Arrow />
+        <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
+          <div className="flex justify-center">
+            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor mb-[24px] lg:mb-0">
+              O PACIENTE MUDOU… E O MERCADO TAMBÉM
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:my-[72px]">
+            <div className="col-span-4 md:col-span-4 lg:col-span-6 lg:col-start-2 lg:col-end-6">
+              <p className="text-lightColor leading-5">
+                Dra Carla começou a perceber que sua intervenção com os seus
+                pacientes tinha mudado… agora ela tinha dois pacientes: um
+                virtual e outro presencial. Portanto, o hospital, antenado no
+                que acontece no mercado, implantou a telemedicina, bem passou a
+                usar amplamente novas tecnologias que pudessem aumentar a
+                redução de custos e a eficiência da operação.
+              </p>
+            </div>
+            <div className="col-span-4 md:col-span-4 lg:col-span-6 lg:col-start-7 lg:col-end-12">
+              <p className="text-lightColor leading-5">
+                A exigência cada vez maior dos stakeholders e a competitividade
+                do mercado da saúde traduziu-se em grandes movimentos de fusões
+                e aquisições. Agora, se ela quisesse crescer na carreira dentro
+                do hospital, teria que entender de liderança e gestão de alta
+                performance, uma vez que o mercado já não permite gestores que
+                atuam na base da “tentativa e erro”, tomando decisões imprecisas
+                e de baixa assertividade.
+              </p>
+            </div>
+          </div>
+        </Section>
+        <Arrow />
+        <Section
+          backgroundImage="./assets/backgrounds/white-bg.png"
+          className="px-4 py-4 md:px-20 md:py-6"
+        >
+          <div className="flex justify-center mb-6 lg:mb-[72px]">
+            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor">
+              UM NOVO CAMINHO PELA FRENTE
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
+            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6">
+              <TextFrame className="2xl:">
+                <p className="text-darkColor leading-5 mb-8">
+                  Dra Carla enfim entendeu que não estava pronta para vencer os
+                  principais desafios do mercado de saúde porque não tinha
+                  competências em gestão. Era hora de tomar um outro rumo na
+                  carreira e na vida! Era hora de investir em quem mais entendia
+                  do seu negócio e do seu sonho: ela mesma!!!
+                </p>
+                <p className="text-darkColor leading-5 mb-8">
+                  Assim como a Dra Carla, agora você tem a oportunidade de tomar
+                  um novo caminho… uma jornada em busca de competências que
+                  podem encurtar e muito a sua trajetória rumo ao sucesso e à
+                  tranquilidade.
+                </p>
+                <p className="text-darkColor leading-5 mb-8">
+                  É hora de você fazer a Pós-graduação em Gestão de Negócios de
+                  Saúde da Fundação Dom Cabral!!! E o melhor, sem sair do
+                  Maranhão!
+                </p>
+                <p className="text-darkColor leading-5">
+                  Essa ideia pode até lhe deixar um pouco inseguro e
+                  desconfortável, mas você não estará sozinho… você terá os
+                  melhores para lhe orientar e caminhar ao seu lado!
+                </p>
+              </TextFrame>
+            </div>
+            <div className="hidden lg:inline lg:col-span-6 lg:col-start-8 lg:col-end-12">
+              <img src="/assets/images/doctor-smiling.png" alt="Imagem Carla" />
+            </div>
+          </div>
+        </Section>
+        <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
+          <div className="flex justify-center py-[72px]">
+            <h2 className="text-xl lg:text-3xl font-bold text-lightColor">
+              Você está preparado para dar um próximo passo na sua carreira?
+            </h2>
+          </div>
+        </Section>
+        <Arrow />
+        <Section
+          backgroundImage="./assets/backgrounds/white-bg.png"
+          className="px-4 py-4 md:px-20 md:py-6"
+        >
+          <div className="flex justify-center py-16">
+            <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
+              PARA QUEM ESTA PÓS FAZ DIFERENÇA?
+            </h2>
+          </div>
+          <div className="flex flex-col lg:flex-row justify-evenly">
+            <IconFrame>
+              <img src="./assets/svg/doctor.svg" />
+              <span className="text-base">
+                Profissionais que atuam na área da saúde
+              </span>
+            </IconFrame>
+            <IconFrame>
+              <img src="./assets/svg/lawyer.svg" />
+              <span className="text-base">
+                Gestores e profissionais hospitalares
+              </span>
+            </IconFrame>
+            <IconFrame>
+              <img src="./assets/svg/business.svg" />
+              <span className="text-base">
+                Representantes de Medicamentos e equipamentos para saúde
+              </span>
+            </IconFrame>
+          </div>
+          <div className="flex justify-center py-6 lg:py-20">
+            <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
+              FAÇA PARTE E OBTENHA OS SEGUINTES RESULTADOS
+            </h2>
+          </div>
+          <div className="flex flex-col lg:flex-row justify-evenly">
+            <IconFrame>
+              <img src="./assets/svg/creativity.svg" />
+              <span className="text-base">
+                Desenvolvimento da criatividade, flexibilidade, pensamento
+                intuitivo, uso do pensamento divergente e diferentes formas de
+                expressão
+              </span>
+            </IconFrame>
+            <IconFrame>
+              <img src="./assets/svg/relationship.svg" />
+              <span className="text-base">
+                Melhoria no relacionamento interpessoal e trabalho colaborativo
+              </span>
+            </IconFrame>
+          </div>
+        </Section>
+        <Section
+          backgroundImage="./assets/backgrounds/Infographic-bg.png"
+          className="px-4 py-4 md:px-20 md:py-6"
+        >
+          <div className="flex justify-center py-16">
+            <h2 className="text-3xl text-center  lg:text-4xl font-bold text-lightColor">
+              ESTRUTURA DO PROGRAMA
+            </h2>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:hidden">
+            <img src="./assets/images/Legend.png" className="mb-10" />
+            <img src="./assets/images/Percurso.png" />
+          </div>
+          <div className="hidden lg:flex justify-center items-center">
+            <img src="./assets/images/Estrutura.png" />
+          </div>
+        </Section>
+        <Arrow />
+        <Section
+          backgroundImage="./assets/backgrounds/white-bg.png"
+          className="px-4 py-4 md:px-20 md:py-6"
+        >
+          <div className="flex justify-center py-16">
+            <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
+              PROCESSO SELETIVO
+            </h2>
+          </div>
+          <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
+            <div className="hidden lg:block lg:col-span-6 ">
+              <img src="./assets/images/processoseletivo-img.png" />
+            </div>
+            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-8 lg:col-end-12 2xl:col-start-7 2xl:col-end-13">
+              <TextFrame>
+                <h4 className="text-secondaryGreen font-bold text-2xl mb-6 lg:mb-8">
+                  Etapas
+                </h4>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Preenchimento da ficha de inscrição.
+                  </span>
+                </div>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Entrevista individual (via Zoom) para alinhar expectativas e
+                    avaliar experiências profissionais e sobre carreira.
+                  </span>
+                </div>
+                <div className="flex items-center mb-8">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Comprovação de graduação completa (diploma).
+                  </span>
+                </div>
+                <h4 className="text-secondaryGreen font-bold text-2xl mb-6 lg:mb-8">
+                  Documentos Necessários
+                </h4>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Curriculum vitae atualizado.
+                  </span>
+                </div>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Cópia do histórico escolar (Graduação)
+                  </span>
+                </div>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Diploma de conclusão de curso superior, licenciatura plena
+                    ou bacharelado, ou declaração de conclusão de curso
+                    sequencial de formação específica (original e cópia, frente
+                    e verso).
+                  </span>
+                </div>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">
+                    Cópia do documento de identificação atual com foto.
+                  </span>
+                </div>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">Cópia do CPF.</span>
+                </div>
+                <div className="flex items-center mb-6">
+                  <img src="./assets/svg/side-arrow.svg" className="mr-2" />
+                  <span className="text-base">Foto 3x4 para o crachá.</span>
+                </div>
+              </TextFrame>
+            </div>
+          </div>
+        </Section>
+        <Arrow />
+        <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
+          <div className="flex justify-center py-16">
+            <h2 className="text-3xl text-center  lg:text-4xl font-bold text-lightColor">
+              OS GUIAS DA JORNADA
+            </h2>
+          </div>
+          <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
+            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6 2xl:flex 2xl:flex-col 2xl:justify-center">
+              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+                Há 46 anos, a Fundação Dom Cabral se destaca em seu campo de
+                atuação pela capacidade de empreender uma leitura detalhada das
+                reais necessidades dos clientes.
+              </p>
+              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+                É exatamente essa visão ampla e aprofundada que permite à FDC
+                formular Soluções Educacionais adequadas a cada caso, promovendo
+                melhores resultados e novas oportunidades de desenvolvimento
+                para indivíduos e organizações.
+              </p>
+              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+                Nossa filosofia respeita a identidade das organizações, a
+                peculiaridade dos segmentos em que atuam e a dinâmica dos
+                mercados.
+              </p>
+              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+                Unindo teoria e prática, a FDC promove a capacitação de
+                executivos, gestores públicos, empresários e organizações. A
+                parceria com escolas internacionais e professores com larga
+                experiência de mercado e rica vivência organizacional
+                possibilita uma troca intensa e produtiva durante os Programas.
+              </p>
+              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+                São Soluções Educacionais sustentadas por alianças estratégicas
+                e acordos de cooperação com renomadas instituições nos Estados
+                Unidos, na China, Índia, Rússia e em outros países da Europa e
+                América Latina
+              </p>
+            </div>
+            <div className="hidden lg:block col-span-6 col-start-8">
+              <img src="./assets/images/guia-img.png" />
+            </div>
+          </div>
+        </Section>
+        <Arrow />
+        <Section
+          backgroundImage="./assets/backgrounds/white-bg.png"
+          className="px-4 py-4 md:px-20 md:py-6"
+        >
+          <div className="flex justify-center py-16">
+            <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
+              O QUE FALAM SOBRE NÓS?
+            </h2>
+          </div>
+          <VideoGrid />
+        </Section>
+        <Section
+          backgroundImage="./assets/backgrounds/Infographic-bg.png"
+          className="px-4 py-4 md:px-20 md:py-6"
+        ></Section>
       </main>
     </>
   );
