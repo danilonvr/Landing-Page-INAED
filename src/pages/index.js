@@ -4,24 +4,28 @@ import styled from "styled-components";
 import Timer from "components/Timer";
 import { Arrow } from "components/ArrowDivider";
 import VideoGrid from "components/Video";
+import Footer from "components/Footer";
 export default function Home() {
   const HeroSection = styled.section`
     background-image: url("/assets/backgrounds/HeroSectionImage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     @media screen and (max-width: 768px) {
       height: 100%;
     }
   `;
   const Glass = styled.div`
     background-color: ${(props) =>
-      props.background || "rgba(255, 255, 255, 1)"};
+      props.background || "rgba(255, 255, 255, 0.25)"};
     backdrop-filter: blur(7.5px);
     padding: 1rem 1.5rem;
     border-radius: 12px;
     color: #fff;
+    @media screen and (max-width: 450px) {
+      margin: 0 auto;
+    }
   `;
   const VerticalLine = styled.div`
     border-left: 1px solid #fff;
@@ -32,11 +36,7 @@ export default function Home() {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    height: 100%;
-    @media screen and (max-width: 768px) {
-      margin: 1rem 0;
-    }
+    height: ${(props) => props.height || "100%"};
   `;
   const TextFrame = styled.div`
     background-color: ${(props) =>
@@ -531,10 +531,111 @@ export default function Home() {
           </div>
           <VideoGrid />
         </Section>
-        <Section
-          backgroundImage="./assets/backgrounds/Infographic-bg.png"
-          className="px-4 py-4 md:px-20 md:py-6"
-        ></Section>
+        <Section backgroundImage="./assets/backgrounds/Infographic-bg.png">
+          <div className="bg-darkColor flex items-center lg:relative">
+            <div className="py-4 lg:py-6 px-4 lg:px-20 lg:max-w-4xl 2xl:max-w-6xl">
+              <h2 className="text-2xl text-center md:text-start  lg:text-4xl font-bold text-lightColor mb-6 lg:mb-10">
+                Investimento
+              </h2>
+              <div className="flex items-center mb-6">
+                <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
+                <span className="text-base text-lightColor">
+                  Valores estão incluem despesas de hospedagem, transporte e
+                  alimentação dos professores.
+                </span>
+              </div>
+              <div className="flex items-center mb-6">
+                <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
+                <span className="text-base text-lightColor">
+                  Pagamento à vista tem 10% de desconto e pode ser parcelado em
+                  até 3x.
+                </span>
+              </div>
+              <div className="flex items-center mb-6">
+                <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
+                <span className="text-base text-lightColor">
+                  Pagamento entre 4 a 24 meses incidem juros de 0,65% ao mês*
+                </span>
+              </div>
+              <div className="flex items-center mb-6">
+                <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
+                <span className="text-base text-lightColor">
+                  Descontos para grupos e/ou empresas PAEX (FDC) – Consultar
+                  condições. 
+                </span>
+              </div>
+              <div className="flex items-center mb-6">
+                <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
+                <span className="text-base text-lightColor">
+                  Caso tenha alguma dúvida sobre o programa, entre em contato
+                  com o INAED, Associado da Fundação Dom Cabral no Maranhão e
+                  Piauí.
+                </span>
+              </div>
+              <div className="flex items-center mb-6">
+                <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
+                <span className="text-base font-bold text-lightColor">
+                  Temos política de benefícios para grupos!!!
+                </span>
+              </div>
+              <Glass className="md:max-w-xl">
+                <Timer endDate="2023-04-14T23:59:59" />
+              </Glass>
+              <Glass
+                background="rgba(15, 56, 67, 0.7)"
+                className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:absolute lg:-top-16 lg:right-20 2xl:"
+              >
+                <img src="./assets/logos/logo.svg" className="mb-8 mt-20" />
+                <h2 className="text-4xl text-primaryGreen font-bold mb-10">
+                  OFERTA EXCLUSIVA
+                </h2>
+                <span className="text-2xl mb-4">
+                  3x de{" "}
+                  <span className="text-4xl font-bold ">R$ 12.593,70</span>
+                </span>
+                <span className="text-base mb-10">OU R$ 37.781,10 À VISTA</span>
+                <a
+                  href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/"
+                  className="mb-4"
+                >
+                  <Button text="QUERO ME INSCREVER AGORA" />
+                </a>
+                <a href="google.com" className="mb-6">
+                  <Button text="FALE CONOSCO VIA WHATSAPP" />
+                </a>
+                <span className="text-2xl text-primaryBlue font-bold mb-4">
+                  Garanta logo a sua vaga
+                </span>
+                <span className="text-base text-lightColor font-bold mb-8">
+                  As aulas já começam no dia 14/04/2023!
+                </span>
+              </Glass>
+            </div>
+          </div>
+          <Glass className="flex flex-col items-center lg:hidden ">
+            <h2 className="text-2xl font-bold text-center text-lightColor mt-8">
+              OFERTA EXCLUSIVA
+            </h2>
+            <span className="text-2xl font-bold mt-4">3x de R$ 12.593,70</span>
+            <span className="text-base mt-2 mb-8">OU R$ 37.781,10 À VISTA</span>
+            <a
+              href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/"
+              className="mb-4"
+            >
+              <Button text="QUERO ME INSCREVER AGORA" />
+            </a>
+            <a href="google.com" className="mb-4">
+              <Button text="FALE CONOSCO VIA WHATSAPP" />
+            </a>
+            <span className="text-2xl text-lightColor font-bold mb-2">
+              Garanta logo a sua vaga
+            </span>
+            <span className="text-base text-lightColor font-bold mb-8">
+              As aulas já começam no dia 14/04/2023!
+            </span>
+          </Glass>
+        </Section>
+        <Footer />
       </main>
     </>
   );

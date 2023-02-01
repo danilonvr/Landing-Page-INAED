@@ -48,8 +48,9 @@ const Timer = ({ endDate }) => {
 
   return (
     <>
-    <div className='flex items-center'>
-        <span className='text-base md:text-2xl font-bold mr-4'>Restam apenas:</span>
+    <div className='flex flex-col md:flex-row items-center'>
+        <span className='text-base md:text-2xl md:font-bold mr-4 mb-6 md:mb-0 text-lightColor'>Restam apenas:</span>
+        <div className='flex flex-row'>
         <TimerDiv>
             <span className='text-2xl font-bold mb-2'>
             {timeLeft.days}
@@ -74,6 +75,7 @@ const Timer = ({ endDate }) => {
             </span>
             <span className='text-base font-bold'>Seg</span>
         </TimerDiv>
+        </div>
     </div>
     </>
     
