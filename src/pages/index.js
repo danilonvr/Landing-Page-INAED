@@ -12,8 +12,14 @@ export default function Home() {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    @media screen and (max-width: 768px) {
-      height: 100%;
+    @media screen and (min-width: 1366px) {
+      height: 675px;
+    }
+    @media screen and (min-width: 1440px) {
+      height: 670px;
+    }
+    @media screen and (min-width: 1920px) {
+      height: 831px;
     }
   `;
   const Glass = styled.div`
@@ -61,7 +67,7 @@ export default function Home() {
       margin-bottom: 0.5rem;
       width: 48px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 820px) {
       margin-bottom: 1.5rem;
       span {
         text-align: center;
@@ -85,7 +91,7 @@ export default function Home() {
                 <img
                   src="/assets/logos/logo.svg"
                   alt="Logo"
-                  className="hidden lg:block"
+                  className="hidden lg:block lg:w-40"
                 />
               </div>
               <div>
@@ -96,12 +102,14 @@ export default function Home() {
                 />
               </div>
               <div className="hidden md:contents">
-                <Button text="Quero me inscrever agora!" />
+                <a className="mb-6 md:mb-0" href="https://www.google.com">
+                  <Button text="Quero me inscrever agora!" />
+                </a>
               </div>
             </div>
           </header>
-          <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
-            <div className="flex flex-col justify-center col-span-4 md:col-span-8 lg:col-span-5">
+          <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-4 md:gap-6">
+            <div className="flex flex-col justify-center col-span-4 md:col-span-8 xl:col-span-5">
               <h1 className="text-3xl lg:text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
                 sucesso em um negócio de saúde
@@ -109,7 +117,10 @@ export default function Home() {
               <h3 className="text-2xl py-6 text-lightColor">
                 (Spoiler: a resposta já está neste título)
               </h3>
-              <Button text="Faça a sua inscrição agora mesmo!" />
+              <a className="mb-6 md:mb-0" href="https://www.google.com">
+                <Button text="Faça a sua inscrição agora mesmo!" />
+              </a>
+
               <Glass
                 background="rgba(255, 255, 255, 0.25)"
                 className="my-4 flex font-bold justify-center"
@@ -132,7 +143,7 @@ export default function Home() {
                   <span>Início previsto: 14/04/2023</span>
                 </div>
               </Glass>
-              <div className="col-span-6">
+              <div className="col-span-6 mt-6">
                 <Glass
                   background="rgba(33, 39, 56, 0.25)"
                   className="flex flex-col justify-center items-center"
@@ -145,15 +156,19 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden lg:block col-start-8 col-span-7">
-              <img src="/assets/images/doctor.png" alt="Imagem Doutor" />
+            <div className="hidden xl:block col-start-8 col-span-7">
+              <img
+                src="/assets/images/doctor.png"
+                alt="Imagem Doutor"
+                className="h-fit"
+              />
             </div>
           </div>
         </HeroSection>
         <Arrow />
         <Section className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor">
+          <div className="flex justify-center lg:py-14">
+            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor py-6 lg:py-0">
               REFLITA UM POUCO
             </h2>
           </div>
@@ -161,8 +176,8 @@ export default function Home() {
             <div className="hidden lg:inline md:col-span-8 lg:col-span-5">
               <img src="/assets/images/carla.png" alt="Imagem Carla" />
             </div>
-            <div className="col-span-4 md:col-span-8 lg:col-span-7 lg:col-start-7 lg:col-end-11 lg:mt-[72px]">
-              <p className="text-base leading-5 py-6 text-darkColor">
+            <div className="col-span-4 md:col-span-8 lg:col-span-7 lg:col-start-7 lg:col-end-11 lg:mt-14">
+              <p className="text-base leading-5  text-darkColor">
                 Caro(a) profissional de saúde, Já se foi o tempo em que só se
                 ter uma boa qualificação técnica era o suficiente para ter uma
                 carreira sólida e tranquila. Obviamente, hoje, com a maior
@@ -193,7 +208,7 @@ export default function Home() {
         </Section>
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:py-14">
             <h2 className="text-2xl lg:text-4xl font-bold text-lightColor">
               TEMPO É DINHEIRO OU DINHEIRO É TEMPO?
             </h2>
@@ -225,10 +240,9 @@ export default function Home() {
                 seu tempo para ganhar dinheiro, mas que nunca tinha dinheiro o
                 suficiente para lhe proporcionar tempo de qualidade. 
               </p>
-              <p className="text-base leading-5 py-6 text-lightColor">
+              <p className="text-base text-center font-bold leading-5 py-6 text-lightColor">
                 Quanto tempo e esforço Dra Carla poderia ter poupado se tivesse
-                gerenciado melhor seu negócio? Não seria ótimo ter as rédeas do
-                próprio negócio e da própria carreira?
+                gerenciado melhor seu negócio?
               </p>
             </div>
             <div className="hidden lg:inline md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px]">
@@ -236,9 +250,9 @@ export default function Home() {
             </div>
           </div>
         </Section>
-        <Arrow />
+
         <Section className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:py-10">
             <h2 className="text-2xl lg:text-3xl font-bold text-darkColor">
               Não seria ótimo ter as rédeas do próprio negócio e da própria
               carreira?
@@ -248,7 +262,7 @@ export default function Home() {
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center">
-            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor mb-[24px] lg:mb-0">
+            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor mb-[24px] lg:mb-0 lg:mt-14">
               O PACIENTE MUDOU… E O MERCADO TAMBÉM
             </h2>
           </div>
@@ -281,7 +295,7 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/white-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center mb-6 lg:mb-[72px]">
+          <div className="flex justify-center mb-6 lg:my-[72px]">
             <h2 className="text-3xl lg:text-4xl font-bold text-darkColor">
               UM NOVO CAMINHO PELA FRENTE
             </h2>
@@ -320,7 +334,7 @@ export default function Home() {
           </div>
         </Section>
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center py-[72px]">
+          <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-xl lg:text-3xl font-bold text-lightColor">
               Você está preparado para dar um próximo passo na sua carreira?
             </h2>
@@ -331,7 +345,7 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/white-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center py-16">
+          <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
               PARA QUEM ESTA PÓS FAZ DIFERENÇA?
             </h2>
@@ -344,15 +358,15 @@ export default function Home() {
               </span>
             </IconFrame>
             <IconFrame>
-              <img src="./assets/svg/lawyer.svg" />
-              <span className="text-base">
-                Gestores e profissionais hospitalares
-              </span>
-            </IconFrame>
-            <IconFrame>
               <img src="./assets/svg/business.svg" />
               <span className="text-base">
                 Representantes de Medicamentos e equipamentos para saúde
+              </span>
+            </IconFrame>
+            <IconFrame>
+              <img src="./assets/svg/lawyer.svg" />
+              <span className="text-base">
+                Gestores e profissionais hospitalares
               </span>
             </IconFrame>
           </div>
@@ -364,7 +378,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-evenly">
             <IconFrame>
               <img src="./assets/svg/creativity.svg" />
-              <span className="text-base">
+              <span className="text-base text-center">
                 Desenvolvimento da criatividade, flexibilidade, pensamento
                 intuitivo, uso do pensamento divergente e diferentes formas de
                 expressão
@@ -382,7 +396,7 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/Infographic-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center py-16">
+          <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-lightColor">
               ESTRUTURA DO PROGRAMA
             </h2>
@@ -400,7 +414,7 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/white-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center py-16">
+          <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
               PROCESSO SELETIVO
             </h2>
@@ -409,7 +423,7 @@ export default function Home() {
             <div className="hidden lg:block lg:col-span-6 ">
               <img src="./assets/images/processoseletivo-img.png" />
             </div>
-            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-8 lg:col-end-12 2xl:col-start-7 2xl:col-end-13">
+            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-8 lg:col-end-12 2xl:col-start-7 2xl:col-end-13 2xl:pb-20">
               <TextFrame>
                 <h4 className="text-secondaryGreen font-bold text-2xl mb-6 lg:mb-8">
                   Etapas
@@ -477,7 +491,7 @@ export default function Home() {
         </Section>
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center py-16">
+          <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-lightColor">
               OS GUIAS DA JORNADA
             </h2>
@@ -524,7 +538,7 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/white-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center py-16">
+          <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
               O QUE FALAM SOBRE NÓS?
             </h2>
