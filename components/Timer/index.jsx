@@ -52,25 +52,25 @@ const Timer = ({ endDate }) => {
         <span className='text-base md:text-2xl md:font-bold mr-4 mb-6 md:mb-0 text-lightColor'>Restam apenas:</span>
         <div className='flex flex-row'>
         <TimerDiv>
-            <span className='text-2xl font-bold mb-2'>
+            <span className='125%:text-base text-2xl font-bold mb-2'>
             {timeLeft.days}
             </span>
-            <span className='text-base font-bold'>Dias</span>
+            <span className='125%:text-base text-base font-bold'>Dias</span>
         </TimerDiv>
         <TimerDiv>
-            <span className='text-2xl font-bold mb-2'>
+            <span className='125%:text-base text-2xl font-bold mb-2'>
             {timeLeft.hours}
             </span>
-            <span className='text-base font-bold'>Hrs</span>
+            <span className='125%:text-base text-base font-bold'>Hrs</span>
         </TimerDiv>
         <TimerDiv>
-            <span className='text-2xl font-bold mb-2'>
+            <span className='125%:text-base text-2xl font-bold mb-2'>
             {timeLeft.minutes}
             </span>
             <span className='text-base font-bold'>Min</span>
         </TimerDiv>
         <TimerDiv>
-            <span className='text-2xl font-bold mb-2'>
+            <span className='125%:text-base text-2xl font-bold mb-2'>
             {timeLeft.seconds}
             </span>
             <span className='text-base font-bold'>Seg</span>

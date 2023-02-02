@@ -98,14 +98,14 @@ export default function Home() {
                   className="hidden lg:block lg:w-40"
                 />
               </div>
-              <div>
+              <div  className="flex justify-center items-center">
                 <img
                   src="/assets/logos/logo.svg"
                   alt="Logo Pós"
-                  className="w-2/3"
+                  className="w-2/3 self-center"
                 />
               </div>
-              <div className="hidden md:contents">
+              <div className="hidden md:inline ">
                   <Button href="https://www.google.com" text="Quero me inscrever agora!" />
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
                   <span>Início previsto: 14/04/2023</span>
                 </div>
               </Glass>
-              <div className="col-span-6 mt-6">
+              <div className="col-span-6 mt-6 125%:mt-2">
                 <Glass
                   background="rgba(33, 39, 56, 0.25)"
                   className="flex flex-col justify-center items-center"
@@ -158,38 +158,40 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden 2xl:inline col-start-8 col-span-7 125%:col-start-9 ">
+            <div className="hidden 2xl:inline col-start-8 col-span-7 125%:col-start-8 ">
               <img
                 src="/assets/images/doctor.png"
                 alt="Imagem Doutor"
-                className="h-fit object-cover" 
+                className="h-fit object-cover 125%:pt-10" 
               />
             </div>
           </div>
         </HeroSection>
         <Arrow />
         <Section className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center lg:py-14">
-            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor py-6 lg:py-0">
+          <div className="flex justify-center lg:py-10">
+            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor ">
               REFLITA UM POUCO
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
-            <div className="hidden lg:inline md:col-span-8 lg:col-span-5">
+            <div className="hidden lg:flex md:col-span-8 lg:col-span-6 items-center">
               <img src="/assets/images/carla.png" alt="Imagem Carla" />
             </div>
-            <div className="col-span-4 md:col-span-8 lg:col-span-7 lg:col-start-7 lg:col-end-11 lg:mt-14">
+            <div className="col-span-4 md:col-span-8 lg:col-span-7 lg:col-start-7 lg:col-end-12 lg:mt-6">
+              <p className="text-base leading-5 text-darkColor 125%:mb-2">
+              Caro(a) profissional de saúde,
+              </p>
               <p className="text-base leading-5  text-darkColor">
-                Caro(a) profissional de saúde, Já se foi o tempo em que só se
-                ter uma boa qualificação técnica era o suficiente para ter uma
+                Já se foi o tempo em que apenas
+                uma boa qualificação técnica era o suficiente para ter uma
                 carreira sólida e tranquila. Obviamente, hoje, com a maior
                 competitividade do mercado, é necessário que o profissional seja
                 mais estratégico nas suas decisões de carreira. Você e a Dra.
-                Carla, como bons profissionais que são, prezam por anos de muito
+                Carla, como bons profissionais que são, prezaram por anos de muito
                 estudo e dedicação na sua especialidade como ponto de partida.
               </p>
-
-              <p className="text-base leading-5 text py-6 text-darkColor">
+              <p className="text-base leading-5 py-2 text text-darkColor">
                 Dra. Carla tem altíssima qualificação na sua especialidade.
                 Desde o início da carreira, decidiu abrir sua própria clínica
                 para exercer a profissão que ama. Pegou suas economias e de seu
@@ -197,12 +199,13 @@ export default function Home() {
                 aspirações para o futuro, também aceitou a oportunidade de
                 trabalhar em um grande hospital.
               </p>
-              <p className="text-base leading-5 py-6 text-darkColor">
+              <p className="text-base leading-5 pt-2 pb-6 text-darkColor">
                 O nome da Dra. Carla é fictício, mas os fatos que irei narrar na
                 sua trajetória provavelmente não parecerão mera coincidência pra
-                você. Nesta história, ela é uma médica mas facilmente poderia
-                ser uma cirurgiã dentista, uma enfermeira, uma fisioterapeuta ou
-                uma terapeuta ocupacional. Após alguns anos de exercício da
+                você. Nesta história, ela é  <span className="font-bold text-base text-darkColor">uma médica</span> mas facilmente poderia ser 
+              <span className="ml-1 font-bold text-base text-darkColor">
+                 uma cirurgiã dentista, uma enfermeira, uma fisioterapeuta ou
+                uma terapeuta ocupacional.</span> Após alguns anos de exercício da
                 profissão ela começa a fazer algumas reflexões…
               </p>
             </div>
@@ -210,46 +213,46 @@ export default function Home() {
         </Section>
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center lg:py-14">
+          <div className="flex justify-center lg:py-10">
             <h2 className="text-2xl lg:text-4xl font-bold text-lightColor">
               TEMPO É DINHEIRO OU DINHEIRO É TEMPO?
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:mb-[72px]">
             <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6 lg:mt-[72px]">
-              <p className="text-base leading-5 py-6 text-lightColor">
+              <p className="text-base leading-5 text-lightColor">
                 Dra. Carla atende cuidadosamente seus pacientes na sua sala de
                 consultório desde a hora da chegada até o final do expediente,
-                com a convicção que seu trabalho está trazendo conforto e
+                com a convicção de que seu trabalho está trazendo conforto e
                 segurança para a família e tranquilidade financeira para reduzir
                 o ritmo e curtir a vida no futuro.
               </p>
 
-              <p className="text-base leading-5 text py-6 text-lightColor">
-                Dra Carla tem tempo para todos os seus pacientes, mas para
-                qualquer outra coisa, alega não ter tempo. Se ela não consegue
-                se envolver como gostaria nos problemas domésticos, imagina se
-                envolver com as questões administrativas da clínica, que fica à
-                cargo da secretária.
+              <p className="text-base leading-5 text py-2 text-lightColor">
+                Dra. Carla tem tempo para todos os seus pacientes, mas para
+                qualquer outra coisa, alega não ter. Se ela não consegue
+                nem se envolver como gostaria nos problemas domésticos, quem dirá se
+                envolver com as questões administrativas da clínica. Na prática, quem toma conta do seu negócio é a secretária da entrada.
               </p>
-              <p className="text-base leading-5 py-6 text-lightColor">
-                Certo dia, Dra Carla resolveu parar e analisar as contas da
+              <p className="text-base leading-5 py-2 text-lightColor">
+                Certo dia, Dra. Carla resolveu parar e analisar as contas da
                 clínica. Percebeu que até então não tinha devolvido o
-                investimento do marido, não tinha se pagado como investidora e,
-                pior, por muitas vezes tirou dinheiro da sua atividade no
+                investimento do marido, muito menos se pagado como investidora. Pior, por muitas vezes tirou dinheiro da sua atividade no
                 hospital para fechar as contas da clínica, ou seja, estava
                 pagando para trabalhar. Ela entendeu que tinha investido todo
                 seu tempo para ganhar dinheiro, mas que nunca tinha dinheiro o
                 suficiente para lhe proporcionar tempo de qualidade. 
               </p>
-              <p className="text-base text-center font-bold leading-5 py-6 text-lightColor">
+            </div>
+            <div className="hidden lg:flex md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px] items-center">
+              <img src="/assets/images/tempodinheiro.png" alt="Imagem Ampulheta" />
+            </div>
+            <div className="lg:col-span-12 lg:mt-6">
+              <p className="text-base text-center font-bold leading-5 py-2 text-lightColor lg:col-start-4">
                 Quanto tempo e esforço Dra Carla poderia ter poupado se tivesse
                 gerenciado melhor seu negócio?
               </p>
-            </div>
-            <div className="hidden lg:inline md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px]">
-              <img src="/assets/images/tempodinheiro.png" alt="Imagem Carla" />
-            </div>
+              </div>
           </div>
         </Section>
 
@@ -273,11 +276,13 @@ export default function Home() {
               <p className="text-lightColor leading-5">
                 Dra Carla começou a perceber que sua intervenção com os seus
                 pacientes tinha mudado… agora ela tinha dois pacientes: um
-                virtual e outro presencial. Portanto, o hospital, antenado no
-                que acontece no mercado, implantou a telemedicina, bem passou a
-                usar amplamente novas tecnologias que pudessem aumentar a
-                redução de custos e a eficiência da operação.
+                virtual e outro presencial. 
               </p>
+              <p className="text-lightColor leading-5">
+              Inclusive, o hospital em que ela trabalha, antenado no
+                que acontece no mercado, implantou a telemedicina, bem como passou a
+                usar amplamente novas tecnologias que pudessem reduzir custos e aumentar a eficiência da operação.
+                </p>
             </div>
             <div className="col-span-4 md:col-span-4 lg:col-span-6 lg:col-start-7 lg:col-end-12">
               <p className="text-lightColor leading-5">
@@ -305,22 +310,28 @@ export default function Home() {
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
             <div className="col-span-4 md:col-span-8 lg:col-span-6 125%:col-span-7 lg:col-start-2 lg:col-end-6 125%:col-start-2">
               <TextFrame className="2xl:">
-                <p className="text-darkColor leading-5 mb-8">
+                <p className="font-bold text-base leading-5 mb-4">
                   Dra Carla enfim entendeu que não estava pronta para vencer os
                   principais desafios do mercado de saúde porque não tinha
-                  competências em gestão. Era hora de tomar um outro rumo na
+                  competências em gestão.
+                </p>
+                <p className="text-darkColor leading-5 mb-4">
+                   Era hora de tomar um outro rumo na
                   carreira e na vida! Era hora de investir em quem mais entendia
                   do seu negócio e do seu sonho: ela mesma!!!
                 </p>
-                <p className="text-darkColor leading-5 mb-8">
+                <p className="text-darkColor leading-5 mb-4">
                   Assim como a Dra Carla, agora você tem a oportunidade de tomar
                   um novo caminho… uma jornada em busca de competências que
                   podem encurtar e muito a sua trajetória rumo ao sucesso e à
                   tranquilidade.
                 </p>
-                <p className="text-darkColor leading-5 mb-8">
+                <p className="text-darkColor font-bold   leading-5 mb-4">
                   É hora de você fazer a Pós-graduação em Gestão de Negócios de
-                  Saúde da Fundação Dom Cabral!!! E o melhor, sem sair do
+                  Saúde da Fundação Dom Cabral!!!
+                </p>
+                <p className="text-darkColor leading-5 mb-4">
+                E o melhor, sem sair do
                   Maranhão!
                 </p>
                 <p className="text-darkColor leading-5">
@@ -347,7 +358,7 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/white-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center py-8 lg:py-14">
+          <div className="flex justify-center py-8 lg:py-10">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
               PARA QUEM ESTA PÓS FAZ DIFERENÇA?
             </h2>
@@ -356,23 +367,23 @@ export default function Home() {
             <IconFrame>
               <img src="./assets/svg/doctor.svg" />
               <span className="text-base">
-                Profissionais que atuam na área da saúde
+                Profissionais que atuam na área da saúde.
               </span>
             </IconFrame>
             <IconFrame>
               <img src="./assets/svg/business.svg" />
               <span className="text-base">
-                Representantes de Medicamentos e equipamentos para saúde
+                Representantes de Medicamentos e equipamentos para saúde.
               </span>
             </IconFrame>
             <IconFrame>
               <img src="./assets/svg/lawyer.svg" />
               <span className="text-base">
-                Gestores e profissionais hospitalares
+                Gestores e profissionais hospitalares.
               </span>
             </IconFrame>
           </div>
-          <div className="flex justify-center py-6 lg:py-20">
+          <div className="flex justify-center py-6 lg:py-10">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
               FAÇA PARTE E OBTENHA OS SEGUINTES RESULTADOS
             </h2>
@@ -383,13 +394,13 @@ export default function Home() {
               <span className="text-base text-center">
                 Desenvolvimento da criatividade, flexibilidade, pensamento
                 intuitivo, uso do pensamento divergente e diferentes formas de
-                expressão
+                expressão.
               </span>
             </IconFrame>
             <IconFrame>
               <img src="./assets/svg/relationship.svg" />
               <span className="text-base">
-                Melhoria no relacionamento interpessoal e trabalho colaborativo
+                Melhoria no relacionamento interpessoal e trabalho colaborativo.
               </span>
             </IconFrame>
           </div>
@@ -416,13 +427,13 @@ export default function Home() {
           backgroundImage="./assets/backgrounds/white-bg.png"
           className="px-4 py-4 md:px-20 md:py-6"
         >
-          <div className="flex justify-center py-8 lg:py-14">
+          <div className="flex justify-center py-8 lg:py-10">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
               PROCESSO SELETIVO
             </h2>
           </div>
           <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
-            <div className="hidden lg:block lg:col-span-6 ">
+            <div className="hidden lg:flex items-center lg:col-span-6 ">
               <img src="./assets/images/processoseletivo-img.png" />
             </div>
             <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-8 lg:col-end-12 2xl:col-start-7 2xl:col-end-13 2xl:pb-20">
@@ -493,44 +504,44 @@ export default function Home() {
         </Section>
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center py-8 lg:py-14">
+          <div className="flex justify-center py-8 lg:py-10">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-lightColor">
               OS GUIAS DA JORNADA
             </h2>
           </div>
           <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
             <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6 2xl:flex 2xl:flex-col 2xl:justify-center">
-              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+              <p className="text-base text-lightColor leading-5 mb-4">
                 Há 46 anos, a Fundação Dom Cabral se destaca em seu campo de
                 atuação pela capacidade de empreender uma leitura detalhada das
                 reais necessidades dos clientes.
               </p>
-              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+              <p className="text-base text-lightColor leading-5 mb-4 ">
                 É exatamente essa visão ampla e aprofundada que permite à FDC
                 formular Soluções Educacionais adequadas a cada caso, promovendo
                 melhores resultados e novas oportunidades de desenvolvimento
                 para indivíduos e organizações.
               </p>
-              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+              <p className="text-base text-lightColor leading-5 mb-4">
                 Nossa filosofia respeita a identidade das organizações, a
                 peculiaridade dos segmentos em que atuam e a dinâmica dos
                 mercados.
               </p>
-              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+              <p className="text-base text-lightColor leading-5 mb-4">
                 Unindo teoria e prática, a FDC promove a capacitação de
                 executivos, gestores públicos, empresários e organizações. A
                 parceria com escolas internacionais e professores com larga
                 experiência de mercado e rica vivência organizacional
                 possibilita uma troca intensa e produtiva durante os Programas.
               </p>
-              <p className="text-base text-lightColor leading-5 mb-6 md:mb-8">
+              <p className="text-base text-lightColor leading-5 mb-4">
                 São Soluções Educacionais sustentadas por alianças estratégicas
                 e acordos de cooperação com renomadas instituições nos Estados
                 Unidos, na China, Índia, Rússia e em outros países da Europa e
                 América Latina
               </p>
             </div>
-            <div className="hidden lg:block col-span-6 col-start-8">
+            <div className="hidden lg:flex col-span-6 col-start-8 items-center">
               <img src="./assets/images/guia-img.png" />
             </div>
           </div>
@@ -602,16 +613,17 @@ export default function Home() {
                 className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:absolute lg:-top-10 lg:right-10"
               >
                 <img src="./assets/logos/logo.svg" className="mb-8 mt-20" />
-                <h2 className="text-2xl 2xl:text-3xl text-primaryGreen font-bold mb-10">
+                <h2 className="text-2xl 2xl:text-3xl text-primaryGreen font-bold mb-8">
                   OFERTA EXCLUSIVA
                 </h2>
-                <span className="text-2xl mb-4">
-                  3x de{" "}
-                  <span className="text-2xl 2xl:text-3xl font-bold ">R$ 12.593,70</span>
+                <span className="text-2xl mb-2">
+                  <span className="text-2xl 2xl:text-3xl font-bold ">R$ 37.781,10 </span>
+                  à vista
                 </span>
-                <span className="text-base mb-10">OU R$ 37.781,10 À VISTA</span>
+                <span className="text-base mb-2 fontb">OU PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
+                <span className="text-sm mb-10 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
                   <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA" />
-                  <Button href="google.com" text="FALE CONOSCO VIA WHATSAPP" />
+                  <Button href="google.com" text="FALE COM UM ESPECIALISTA!" />
                 <span className="text-2xl text-primaryBlue font-bold my-4">
                   Garanta logo a sua vaga
                 </span>
@@ -625,8 +637,9 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-center text-lightColor mt-8">
               OFERTA EXCLUSIVA
             </h2>
-            <span className="text-2xl font-bold mt-4">3x de R$ 12.593,70</span>
-            <span className="text-base mt-2 mb-8">OU R$ 37.781,10 À VISTA</span>
+            <span className="text-2xl font-bold mt-4">R$ 37,781.10 à vista</span>
+            <span className="text-base mt-2 mb-4">PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
+            <span className="text-sm mb-8 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
               <div className="flex justify-around">
               <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA"/>
               <Button href="https://google.com" text="FALE CONOSCO VIA WHATSAPP" />

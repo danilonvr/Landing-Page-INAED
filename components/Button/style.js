@@ -19,4 +19,6 @@ export const DefaultButton = styled.button`
   @media screen and (max-width: 1536px) {
     font-size: 1rem;
   }
+  @media screen and (min-width: 1536px) and (max-width: 1920px) {
+    }
 `;
