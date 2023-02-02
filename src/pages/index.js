@@ -12,12 +12,6 @@ export default function Home() {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    @media screen and (min-width: 1366px) {
-      height: 675px;
-    }
-    @media screen and (min-width: 1440px) {
-      height: 670px;
-    }
     @media screen and (min-width: 1536px) and (max-width: 1920px) {
       height: 100vh;
     }
@@ -149,7 +143,7 @@ export default function Home() {
                   <span>Início previsto: 14/04/2023</span>
                 </div>
               </Glass>
-              <div className="md:col-span-6 mt-6 125%:mt-2">
+              <div className="md:col-span-6 my-4  125%:mt-2">
                 <Glass
                   background="rgba(33, 39, 56, 0.25)"
                   className="flex flex-col justify-center items-center"
