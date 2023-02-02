@@ -6,7 +6,7 @@ export const ArrowDivider = styled.div`
   justify-content: center;
   align-items: center;
   margin: -2rem 0;
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 `;
