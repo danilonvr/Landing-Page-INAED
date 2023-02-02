@@ -104,7 +104,7 @@ export default function Home() {
                 />
               </div>
               <div className="hidden md:inline ">
-                  <Button href="https://www.google.com" text="Quero me inscrever agora!" />
+                  <Button href="#precos" text="Quero me inscrever agora!" />
               </div>
             </div>
           </header>
@@ -118,7 +118,7 @@ export default function Home() {
                 (Spoiler: a resposta já está neste título)
               </h3>
               <Button
-                href="https://google.com"
+                href="#precos"
                 text="Faça a sua inscrição agora mesmo!"
               />
               <Glass
@@ -556,7 +556,7 @@ export default function Home() {
           </div>
           <VideoGrid />
         </Section>
-        <Section backgroundImage="./assets/backgrounds/Infographic-bg.png">
+        <Section backgroundImage="./assets/backgrounds/Infographic-bg.png" id="precos">
           <div className="bg-darkColor flex items-center xl:relative">
             <div className="py-4 lg:py-6 px-4 lg:px-20 xl:max-w-xl 2xl:max-w-3xl">
               <h2 className="text-2xl text-center md:text-start  lg:text-4xl font-bold text-lightColor mb-6 lg:mb-10">
@@ -620,7 +620,7 @@ export default function Home() {
                 </span>
                 <span className="text-base mb-2 fontb">OU PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
                 <span className="text-sm mb-10 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
-                  <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA" />
+                  <Button href="https://inscricao.fdc.org.br/FichaInscricao.aspx?CrmLanguage=pt&CrmProg=%7b338BCC0B-1299-E911-9FC6-00505698001D%7d&CrmEd=02a1545d-294b-ed11-b221-00505698001d" text="QUERO ME INSCREVER AGORA" />
                   <Button href="google.com" text="FALE COM UM ESPECIALISTA!" />
                 <span className="text-2xl text-primaryBlue font-bold my-4">
                   Garanta logo a sua vaga
@@ -639,8 +639,8 @@ export default function Home() {
             <span className="text-base mt-2 mb-4">PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
             <span className="text-sm mb-8 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
               <div className="flex flex-col justify-around">
-              <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA"/>
-              <Button href="https://google.com" text="FALE CONOSCO VIA WHATSAPP" />
+              <Button href="https://inscricao.fdc.org.br/FichaInscricao.aspx?CrmLanguage=pt&CrmProg=%7b338BCC0B-1299-E911-9FC6-00505698001D%7d&CrmEd=02a1545d-294b-ed11-b221-00505698001d" text="QUERO ME INSCREVER AGORA"/>
+              <Button href="https://google.com" text="FALE COM UM ESPECIALISTA" />
               </div>
             <span className="text-2xl text-lightColor font-bold mb-2">
               Garanta logo a sua vaga
