@@ -35,7 +35,11 @@ export default function Home() {
     @media screen and (max-width: 450px) {
       margin: 0 auto;
     }
+    @media screen and (max-width: 390px) {
+      padding: .5rem .7rem;
+    }
   `;
+  
   const VerticalLine = styled.div`
     border-left: 1px solid #fff;
   `;
@@ -145,7 +149,7 @@ export default function Home() {
                   <span>Início previsto: 14/04/2023</span>
                 </div>
               </Glass>
-              <div className="col-span-6 mt-6 125%:mt-2">
+              <div className="md:col-span-6 mt-6 125%:mt-2">
                 <Glass
                   background="rgba(33, 39, 56, 0.25)"
                   className="flex flex-col justify-center items-center"
@@ -169,7 +173,7 @@ export default function Home() {
         </HeroSection>
         <Arrow />
         <Section className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center lg:py-10">
+          <div className="flex justify-center py-6 lg:py-10">
             <h2 className="text-3xl lg:text-4xl font-bold text-darkColor ">
               REFLITA UM POUCO
             </h2>
@@ -213,7 +217,7 @@ export default function Home() {
         </Section>
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
-          <div className="flex justify-center lg:py-10">
+          <div className="flex justify-center py-6 lg:py-10">
             <h2 className="text-2xl lg:text-4xl font-bold text-lightColor">
               TEMPO É DINHEIRO OU DINHEIRO É TEMPO?
             </h2>
@@ -247,7 +251,7 @@ export default function Home() {
             <div className="hidden lg:flex md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px] items-center">
               <img src="/assets/images/tempodinheiro.png" alt="Imagem Ampulheta" />
             </div>
-            <div className="lg:col-span-12 lg:mt-6">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 lg:mt-6">
               <p className="text-base text-center font-bold leading-5 py-2 text-lightColor lg:col-start-4">
                 Quanto tempo e esforço Dra Carla poderia ter poupado se tivesse
                 gerenciado melhor seu negócio?
@@ -363,7 +367,7 @@ export default function Home() {
               PARA QUEM ESTA PÓS FAZ DIFERENÇA?
             </h2>
           </div>
-          <div className="flex flex-col lg:flex-row justify-evenly">
+          <div className="flex flex-col items-center lg:flex-row justify-evenly">
             <IconFrame>
               <img src="./assets/svg/doctor.svg" />
               <span className="text-base">
@@ -388,7 +392,7 @@ export default function Home() {
               FAÇA PARTE E OBTENHA OS SEGUINTES RESULTADOS
             </h2>
           </div>
-          <div className="flex flex-col lg:flex-row justify-evenly">
+          <div className="flex flex-col items-center lg:flex-row justify-evenly">
             <IconFrame>
               <img src="./assets/svg/creativity.svg" />
               <span className="text-base text-center">
@@ -605,7 +609,7 @@ export default function Home() {
                   Temos política de benefícios para grupos!!!
                 </span>
               </div>
-              <Glass className="md:max-w-xl">
+              <Glass className="w-fit md:max-w-xl">
                 <Timer endDate="2023-04-14T23:59:59" />
               </Glass>
               <Glass
@@ -640,7 +644,7 @@ export default function Home() {
             <span className="text-2xl font-bold mt-4">R$ 37,781.10 à vista</span>
             <span className="text-base mt-2 mb-4">PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
             <span className="text-sm mb-8 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
-              <div className="flex justify-around">
+              <div className="flex flex-col justify-around">
               <Button href="https://www.fdc.org.br/programas/programa-executivo-em-gestao-de-empresas/" text="QUERO ME INSCREVER AGORA"/>
               <Button href="https://google.com" text="FALE CONOSCO VIA WHATSAPP" />
               </div>
