@@ -115,7 +115,7 @@ export default function Home() {
             </div>
           </header>
           <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-4 md:gap-6">
-            <div className="flex flex-col justify-center col-span-4 md:col-span-8 xl:col-span-5 125%:col-span-7">
+            <div className="flex flex-col justify-center col-span-4 md:col-span-8 lg:col-span-12 2xl:col-span-5 125%:col-span-7">
               <h1 className="text-3xl 125%:text-3xl lg:text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
                 sucesso em um negócio de saúde
@@ -162,7 +162,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden 2xl:inline col-start-8 col-span-7 125%:col-start-8 ">
+            <div className="hidden 2xl:flex col-start-8 col-span-7 125%:col-start-8 ">
               <img
                 src="/assets/images/doctor.png"
                 alt="Imagem Doutor"
@@ -312,7 +312,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
-            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 125%:col-span-7 xl:col-start-2 xl:col-end-6 125%:col-start-2">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 125%:col-span-7 2xl:col-start-2 2xl:col-end-6 125%:col-start-2">
               <TextFrame>
                 <p className="font-bold text-base leading-5 mb-4">
                   Dra Carla enfim entendeu que não estava pronta para vencer os
@@ -345,7 +345,7 @@ export default function Home() {
                 </p>
               </TextFrame>
             </div>
-            <div className="hidden xl:inline lg:col-span-6 125%:col-span-5 125%:col-start-9 lg:col-start-8 lg:col-end-12">
+            <div className="hidden xl:flex xl:items-center lg:col-span-6 125%:col-span-5 125%:col-start-9 lg:col-start-8 lg:col-end-12">
               <img src="/assets/images/doctor-smiling.png" alt="Imagem doutor" />
             </div>
           </div>
@@ -440,7 +440,7 @@ export default function Home() {
             <div className="hidden xl:flex items-center lg:col-span-6 ">
               <img src="./assets/images/processoseletivo-img.png" />
             </div>
-            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-8 xl:col-end-12 2xl:col-start-7 2xl:col-end-13 2xl:pb-20">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-8 xl:col-end-13 2xl:col-start-7 2xl:col-end-13 2xl:pb-20">
               <TextFrame>
                 <h4 className="text-secondaryGreen font-bold text-2xl mb-6 lg:mb-8">
                   Etapas
@@ -564,7 +564,7 @@ export default function Home() {
         </Section>
         <Section backgroundImage="./assets/backgrounds/Infographic-bg.png">
           <div className="bg-darkColor flex items-center xl:relative">
-            <div className="py-4 lg:py-6 px-4 lg:px-20 xl:max-w-2xl 2xl:max-w-3xl">
+            <div className="py-4 lg:py-6 px-4 lg:px-20 xl:max-w-xl 2xl:max-w-3xl">
               <h2 className="text-2xl text-center md:text-start  lg:text-4xl font-bold text-lightColor mb-6 lg:mb-10">
                 Investimento
               </h2>
