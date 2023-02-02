@@ -179,10 +179,10 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
-            <div className="hidden lg:flex md:col-span-8 lg:col-span-6 items-center">
+            <div className="hidden xl:flex md:col-span-8 lg:col-span-6 items-center">
               <img src="/assets/images/carla.png" alt="Imagem Carla" />
             </div>
-            <div className="col-span-4 md:col-span-8 lg:col-span-7 lg:col-start-7 lg:col-end-12 lg:mt-6">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-7 xl:col-start-7 xl:col-end-12 lg:mt-6">
               <p className="text-base leading-5 text-darkColor 125%:mb-2">
               Caro(a) profissional de saúde,
               </p>
@@ -218,12 +218,12 @@ export default function Home() {
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center py-6 lg:py-10">
-            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor">
+            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor lg:text-center">
               TEMPO É DINHEIRO OU DINHEIRO É TEMPO?
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:mb-[72px]">
-            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6 lg:mt-[72px]">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-2 xl:col-end-6 lg:mt-[72px]">
               <p className="text-base leading-5 text-lightColor">
                 Dra. Carla atende cuidadosamente seus pacientes na sua sala de
                 consultório desde a hora da chegada até o final do expediente,
@@ -248,7 +248,7 @@ export default function Home() {
                 suficiente para lhe proporcionar tempo de qualidade. 
               </p>
             </div>
-            <div className="hidden lg:flex md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px] items-center">
+            <div className="hidden xl:flex md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px] items-center">
               <img src="/assets/images/tempodinheiro.png" alt="Imagem Ampulheta" />
             </div>
             <div className="col-span-4 md:col-span-8 lg:col-span-12 lg:mt-6">
@@ -271,12 +271,12 @@ export default function Home() {
         <Arrow />
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center">
-            <h2 className="text-2xl lg:text-4xl font-bold text-lightColor mb-[24px] lg:mb-0 lg:mt-14">
+            <h2 className="text-2xl lg:text-4xl lg:text-center font-bold text-lightColor mb-[24px] lg:mb-0 lg:mt-14">
               O PACIENTE MUDOU… E O MERCADO TAMBÉM
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:my-[72px]">
-            <div className="col-span-4 md:col-span-4 lg:col-span-6 lg:col-start-2 lg:col-end-6">
+            <div className="col-span-4 md:col-span-4 lg:col-span-6 xl:col-start-2 xl:col-end-6">
               <p className="text-lightColor leading-5">
                 Dra Carla começou a perceber que sua intervenção com os seus
                 pacientes tinha mudado… agora ela tinha dois pacientes: um
@@ -288,7 +288,7 @@ export default function Home() {
                 usar amplamente novas tecnologias que pudessem reduzir custos e aumentar a eficiência da operação.
                 </p>
             </div>
-            <div className="col-span-4 md:col-span-4 lg:col-span-6 lg:col-start-7 lg:col-end-12">
+            <div className="col-span-4 md:col-span-4 lg:col-span-6 xl:col-start-7 xl:col-end-12">
               <p className="text-lightColor leading-5">
                 A exigência cada vez maior dos stakeholders e a competitividade
                 do mercado da saúde traduziu-se em grandes movimentos de fusões
@@ -307,13 +307,13 @@ export default function Home() {
           className="px-4 py-4 md:px-20 md:py-6"
         >
           <div className="flex justify-center mb-6 lg:my-[72px]">
-            <h2 className="text-3xl lg:text-4xl font-bold text-darkColor">
+            <h2 className="text-3xl lg:text-4xl lg:text-center font-bold text-darkColor">
               UM NOVO CAMINHO PELA FRENTE
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
-            <div className="col-span-4 md:col-span-8 lg:col-span-6 125%:col-span-7 lg:col-start-2 lg:col-end-6 125%:col-start-2">
-              <TextFrame className="2xl:">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 125%:col-span-7 xl:col-start-2 xl:col-end-6 125%:col-start-2">
+              <TextFrame>
                 <p className="font-bold text-base leading-5 mb-4">
                   Dra Carla enfim entendeu que não estava pronta para vencer os
                   principais desafios do mercado de saúde porque não tinha
@@ -345,14 +345,14 @@ export default function Home() {
                 </p>
               </TextFrame>
             </div>
-            <div className="hidden lg:inline lg:col-span-6 125%:col-span-5 125%:col-start-9 lg:col-start-8 lg:col-end-12">
+            <div className="hidden xl:inline lg:col-span-6 125%:col-span-5 125%:col-start-9 lg:col-start-8 lg:col-end-12">
               <img src="/assets/images/doctor-smiling.png" alt="Imagem doutor" />
             </div>
           </div>
         </Section>
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center py-8 lg:py-14">
-            <h2 className="text-xl lg:text-3xl font-bold text-lightColor">
+            <h2 className="text-xl lg:text-3xl lg:text-center font-bold text-lightColor">
               Você está preparado para dar um próximo passo na sua carreira?
             </h2>
           </div>
@@ -367,7 +367,7 @@ export default function Home() {
               PARA QUEM ESTA PÓS FAZ DIFERENÇA?
             </h2>
           </div>
-          <div className="flex flex-col items-center lg:flex-row justify-evenly">
+          <div className="flex flex-col items-center lg:flex-row lg:flex-wrap justify-evenly">
             <IconFrame>
               <img src="./assets/svg/doctor.svg" />
               <span className="text-base">
@@ -437,10 +437,10 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
-            <div className="hidden lg:flex items-center lg:col-span-6 ">
+            <div className="hidden xl:flex items-center lg:col-span-6 ">
               <img src="./assets/images/processoseletivo-img.png" />
             </div>
-            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-8 lg:col-end-12 2xl:col-start-7 2xl:col-end-13 2xl:pb-20">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-8 xl:col-end-12 2xl:col-start-7 2xl:col-end-13 2xl:pb-20">
               <TextFrame>
                 <h4 className="text-secondaryGreen font-bold text-2xl mb-6 lg:mb-8">
                   Etapas
@@ -514,7 +514,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
-            <div className="col-span-4 md:col-span-8 lg:col-span-6 lg:col-start-2 lg:col-end-6 2xl:flex 2xl:flex-col 2xl:justify-center">
+            <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-2 xl:col-end-6 2xl:flex 2xl:flex-col 2xl:justify-center">
               <p className="text-base text-lightColor leading-5 mb-4">
                 Há 46 anos, a Fundação Dom Cabral se destaca em seu campo de
                 atuação pela capacidade de empreender uma leitura detalhada das
@@ -545,7 +545,7 @@ export default function Home() {
                 América Latina
               </p>
             </div>
-            <div className="hidden lg:flex col-span-6 col-start-8 items-center">
+            <div className="hidden xl:flex col-span-6 col-start-8 items-center">
               <img src="./assets/images/guia-img.png" />
             </div>
           </div>
@@ -563,8 +563,8 @@ export default function Home() {
           <VideoGrid />
         </Section>
         <Section backgroundImage="./assets/backgrounds/Infographic-bg.png">
-          <div className="bg-darkColor flex items-center lg:relative">
-            <div className="py-4 lg:py-6 px-4 lg:px-20 lg:max-w-2xl 2xl:max-w-3xl">
+          <div className="bg-darkColor flex items-center xl:relative">
+            <div className="py-4 lg:py-6 px-4 lg:px-20 xl:max-w-2xl 2xl:max-w-3xl">
               <h2 className="text-2xl text-center md:text-start  lg:text-4xl font-bold text-lightColor mb-6 lg:mb-10">
                 Investimento
               </h2>
@@ -614,7 +614,7 @@ export default function Home() {
               </Glass>
               <Glass
                 background="rgba(15, 56, 67, 0.7)"
-                className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:absolute lg:-top-10 lg:right-10"
+                className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center xl:absolute xl:-top-10 xl:right-10"
               >
                 <img src="./assets/logos/logo.svg" className="mb-8 mt-20" />
                 <h2 className="text-2xl 2xl:text-3xl text-primaryGreen font-bold mb-8">
