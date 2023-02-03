@@ -156,11 +156,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden 2xl:flex col-start-8 col-span-7 125%:col-start-8 ">
+            <div className="hidden 2xl:flex items-center  2xl:col-start-8 xl:col-span-6 xl:col-start-8 2xl:col-span-7 125%:col-start-8 w-full">
               <img
                 src="/assets/images/doctor.png"
                 alt="Imagem Doutor"
-                className="h-fit object-cover 125%:pt-10" 
+                className="125%:pt-10 w-fit object-fill" 
               />
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function Home() {
         <Section className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center py-6 lg:py-10">
             <h2 className="text-3xl lg:text-4xl font-bold text-darkColor ">
-              REFLITA UM POUCO
+              VAMOS REFLETIR JUNTOS?
             </h2>
           </div>
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
@@ -177,10 +177,7 @@ export default function Home() {
               <img src="/assets/images/carla.png" alt="Imagem Carla" />
             </div>
             <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-7 xl:col-start-7 xl:col-end-12 lg:mt-6">
-              <p className="text-base leading-5 text-darkColor 125%:mb-2">
-              Caro(a) profissional de saúde,
-              </p>
-              <p className="text-base leading-5  text-darkColor">
+              <p className="text-base leading-5 py-2 text-darkColor">
                 Já se foi o tempo em que apenas
                 uma boa qualificação técnica era o suficiente para ter uma
                 carreira sólida e tranquila. Obviamente, hoje, com a maior
@@ -189,15 +186,7 @@ export default function Home() {
                 Carla, como bons profissionais que são, prezaram por anos de muito
                 estudo e dedicação na sua especialidade como ponto de partida.
               </p>
-              <p className="text-base leading-5 py-2 text text-darkColor">
-                Dra. Carla tem altíssima qualificação na sua especialidade.
-                Desde o início da carreira, decidiu abrir sua própria clínica
-                para exercer a profissão que ama. Pegou suas economias e de seu
-                esposo para abrir o empreendimento. Como ela tem muitas
-                aspirações para o futuro, também aceitou a oportunidade de
-                trabalhar em um grande hospital.
-              </p>
-              <p className="text-base leading-5 pt-2 pb-6 text-darkColor">
+              <p className="text-base leading-5 py-2 text-darkColor">
                 O nome da Dra. Carla é fictício, mas os fatos que irei narrar na
                 sua trajetória provavelmente não parecerão mera coincidência pra
                 você. Nesta história, ela é  <span className="font-bold text-base text-darkColor">uma médica</span> mas facilmente poderia ser 
@@ -205,6 +194,12 @@ export default function Home() {
                  uma cirurgiã dentista, uma enfermeira, uma fisioterapeuta ou
                 uma terapeuta ocupacional.</span> Após alguns anos de exercício da
                 profissão ela começa a fazer algumas reflexões…
+              </p>
+              <p className="text-base leading-5 py-2 text text-darkColor">
+                Dra. Carla tem altíssima qualificação na sua especialidade.
+                Desde o início da carreira, decidiu empreender em sua amada profissão. Pegou suas economias investiu em seu empreendimento. Como ela tem muitas
+                aspirações para o futuro, também aceitou a oportunidade de
+                trabalhar em um grande hospital.
               </p>
             </div>
           </div>
@@ -219,8 +214,7 @@ export default function Home() {
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:mb-[72px]">
             <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-2 xl:col-end-6 lg:mt-[72px]">
               <p className="text-base leading-5 text-lightColor">
-                Dra. Carla atende cuidadosamente seus pacientes na sua sala de
-                consultório desde a hora da chegada até o final do expediente,
+                Dra. Carla atende cuidadosamente seus pacientes, desde a hora da chegada até o final do expediente,
                 com a convicção de que seu trabalho está trazendo conforto e
                 segurança para a família e tranquilidade financeira para reduzir
                 o ritmo e curtir a vida no futuro.
@@ -229,13 +223,13 @@ export default function Home() {
               <p className="text-base leading-5 text py-2 text-lightColor">
                 Dra. Carla tem tempo para todos os seus pacientes, mas para
                 qualquer outra coisa, alega não ter. Se ela não consegue
-                nem se envolver como gostaria nos problemas domésticos, quem dirá se
-                envolver com as questões administrativas da clínica. Na prática, quem toma conta do seu negócio é a secretária da entrada.
+                se envolver como gostaria nos problemas domésticos, menos ainda se
+                envolverá com as questões administrativas da clínica. Na prática, quem toma conta do seu negócio é a atendente.
               </p>
               <p className="text-base leading-5 py-2 text-lightColor">
                 Certo dia, Dra. Carla resolveu parar e analisar as contas da
                 clínica. Percebeu que até então não tinha devolvido o
-                investimento do marido, muito menos se pagado como investidora. Pior, por muitas vezes tirou dinheiro da sua atividade no
+                investimento. Pior, por muitas vezes tirou dinheiro da sua atividade no
                 hospital para fechar as contas da clínica, ou seja, estava
                 pagando para trabalhar. Ela entendeu que tinha investido todo
                 seu tempo para ganhar dinheiro, mas que nunca tinha dinheiro o
@@ -247,7 +241,7 @@ export default function Home() {
             </div>
             <div className="col-span-4 md:col-span-8 lg:col-span-12 lg:mt-6">
               <p className="text-base text-center font-bold leading-5 py-2 text-lightColor lg:col-start-4">
-                Quanto tempo e esforço Dra Carla poderia ter poupado se tivesse
+                Quanto tempo e esforço Dra. Carla poderia ter poupado se tivesse
                 gerenciado melhor seu negócio?
               </p>
               </div>
@@ -272,23 +266,21 @@ export default function Home() {
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:my-[72px]">
             <div className="col-span-4 md:col-span-4 lg:col-span-6 xl:col-start-2 xl:col-end-6">
               <p className="text-lightColor leading-5">
-                Dra Carla começou a perceber que sua intervenção com os seus
+                Dra Carla começou a perceber que sua interação com os seus
                 pacientes tinha mudado… agora ela tinha dois pacientes: um
                 virtual e outro presencial. 
               </p>
               <p className="text-lightColor leading-5">
-              Inclusive, o hospital em que ela trabalha, antenado no
-                que acontece no mercado, implantou a telemedicina, bem como passou a
-                usar amplamente novas tecnologias que pudessem reduzir custos e aumentar a eficiência da operação.
+              Inclusive, o hospital em que ela trabalha, antenado com o que acontece no mercado, implantou a telemedicina, bem como passou a
+                usar amplamente novas tecnologias que contribuíram reduzir custos e aumentar a eficiência da operação.
                 </p>
             </div>
             <div className="col-span-4 md:col-span-4 lg:col-span-6 xl:col-start-7 xl:col-end-12">
               <p className="text-lightColor leading-5">
                 A exigência cada vez maior dos stakeholders e a competitividade
                 do mercado da saúde traduziu-se em grandes movimentos de fusões
-                e aquisições. Agora, se ela quisesse crescer na carreira dentro
-                do hospital, teria que entender de liderança e gestão de alta
-                performance, uma vez que o mercado já não permite gestores que
+                e aquisições. Agora, se ela quisesse fazer carreira no hospital, teria que entender de liderança e gestão de alta
+                performance, uma vez que o mercado já não permitiria gestores que
                 atuam na base da “tentativa e erro”, tomando decisões imprecisas
                 e de baixa assertividade.
               </p>
@@ -309,9 +301,9 @@ export default function Home() {
             <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 125%:col-span-7 2xl:col-start-2 2xl:col-end-6 125%:col-start-2">
               <TextFrame>
                 <p className="font-bold text-base leading-5 mb-4">
-                  Dra Carla enfim entendeu que não estava pronta para vencer os
+                  Dra. Carla enfim entendeu que não estava pronta para vencer os
                   principais desafios do mercado de saúde porque não tinha
-                  competências em gestão.
+                  o perfil de gestão adequado, requerido pelo mercado.
                 </p>
                 <p className="text-darkColor leading-5 mb-4">
                    Era hora de tomar um outro rumo na
@@ -321,11 +313,11 @@ export default function Home() {
                 <p className="text-darkColor leading-5 mb-4">
                   Assim como a Dra Carla, agora você tem a oportunidade de tomar
                   um novo caminho… uma jornada em busca de competências que
-                  podem encurtar e muito a sua trajetória rumo ao sucesso e à
+                  podem encurtar, e muito, a sua trajetória rumo ao sucesso e à
                   tranquilidade.
                 </p>
                 <p className="text-darkColor font-bold   leading-5 mb-4">
-                  É hora de você fazer a Pós-graduação em Gestão de Negócios de
+                  É hora de você fazer a Pós-graduação em Gestão de Negócios da
                   Saúde da Fundação Dom Cabral!!!
                 </p>
                 <p className="text-darkColor leading-5 mb-4">
@@ -347,7 +339,7 @@ export default function Home() {
         <Section background="#212738" className="px-4 py-4 md:px-20 md:py-6">
           <div className="flex justify-center py-8 lg:py-14">
             <h2 className="text-xl lg:text-3xl lg:text-center font-bold text-lightColor">
-              Você está preparado para dar um próximo passo na sua carreira?
+              Você está preparado para dar o próximo passo na sua carreira?
             </h2>
           </div>
         </Section>
@@ -427,7 +419,7 @@ export default function Home() {
         >
           <div className="flex justify-center py-8 lg:py-10">
             <h2 className="text-3xl text-center  lg:text-4xl font-bold text-darkColor">
-              PROCESSO SELETIVO
+              INICIE SUA JORNADA COM A FDC
             </h2>
           </div>
           <div className="grid grid-col-4 md:grid-cols-8 lg:grid-cols-12">
@@ -565,8 +557,7 @@ export default function Home() {
               <div className="flex items-center mb-6">
                 <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
                 <span className="text-base text-lightColor">
-                  Valores estão incluem despesas de hospedagem, transporte e
-                  alimentação dos professores.
+                  O curso terá como modalidade principal o Presencial, com encontros que serão realizados no campus da FDC, no Maranhão
                 </span>
               </div>
               <div className="flex items-center mb-6">
