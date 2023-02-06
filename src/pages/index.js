@@ -7,7 +7,7 @@ import VideoGrid from "components/Video";
 import Footer from "components/Footer";
 export default function Home() {
   const HeroSection = styled.section`
-    background-image: url("/assets/backgrounds/HeroSectionImage.png");
+    background-image: url("/assets/backgrounds/HeroSectionImage2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -4,9 +4,9 @@ export const TimerDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #2a9fbc;
+  background-color: rgba(42, 159, 188, 0.25);;
   padding: 0.5rem;
-  border-radius: 12px;
+  border-radius: 4px;
   color: #fff;
   margin-right: 1rem;
   @media screen and (min-width: 1536px) and (max-width: 1920px) {
