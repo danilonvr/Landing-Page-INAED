@@ -5,6 +5,8 @@ import Timer from "components/Timer";
 import { Arrow } from "components/ArrowDivider";
 import VideoGrid from "components/Video";
 import Footer from "components/Footer";
+import Dropdown from "components/Dropdown";
+import { Glass } from "components/GlassDiv";
 export default function Home() {
   const HeroSection = styled.section`
     background-image: url("/assets/backgrounds/HeroSectionImage2.png");
@@ -15,25 +17,11 @@ export default function Home() {
     @media screen and (min-width: 1536px) and (max-width: 1920px) {
       height: 100vh;
     }
-    @media screen and (min-width: 1920px) {
+    /* @media screen and (min-width: 1920px) {
       height: 831px;
-    }
+    } */
   `;
-  const Glass = styled.div`
-    background-color: ${(props) =>
-      props.background || "rgba(255, 255, 255, 0.25)"};
-    backdrop-filter: blur(7.5px);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    color: #fff;
-    @media screen and (max-width: 450px) {
-      margin: 0 auto;
-    }
-    @media screen and (max-width: 390px) {
-      padding: .5rem .7rem;
-    }
-  `;
-  
+
   const VerticalLine = styled.div`
     border-left: 1px solid #fff;
   `;
@@ -96,7 +84,7 @@ export default function Home() {
                   className="hidden lg:block lg:w-40"
                 />
               </div>
-              <div  className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
                 <img
                   src="/assets/logos/logo.svg"
                   alt="Logo Pós"
@@ -104,7 +92,7 @@ export default function Home() {
                 />
               </div>
               <div className="hidden md:inline ">
-                  <Button href="#precos" text="Quero me inscrever agora!" />
+                <Button href="#precos" text="Quero me inscrever agora!" />
               </div>
             </div>
           </header>
@@ -117,10 +105,7 @@ export default function Home() {
               <h3 className="text-2xl py-6 text-lightColor">
                 (Spoiler: a resposta já está neste título)
               </h3>
-              <Button
-                href="#precos"
-                text="Faça a sua inscrição agora mesmo!"
-              />
+              <Button href="#precos" text="Faça a sua inscrição agora mesmo!" />
               <Glass
                 background="rgba(255, 255, 255, 0.25)"
                 className=" flex font-bold justify-center"
@@ -160,7 +145,7 @@ export default function Home() {
               <img
                 src="/assets/images/doctor.png"
                 alt="Imagem Doutor"
-                className="125%:pt-10 w-fit object-fill" 
+                className="125%:pt-10 w-fit object-fill"
               />
             </div>
           </div>
@@ -178,28 +163,35 @@ export default function Home() {
             </div>
             <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-7 xl:col-start-7 xl:col-end-12 lg:mt-6">
               <p className="text-base leading-5 py-2 text-darkColor">
-                Já se foi o tempo em que apenas
-                uma boa qualificação técnica era o suficiente para ter uma
-                carreira sólida e tranquila. Obviamente, hoje, com a maior
-                competitividade do mercado, é necessário que o profissional seja
-                mais estratégico nas suas decisões de carreira. Você e a Dra.
-                Carla, como bons profissionais que são, prezaram por anos de muito
-                estudo e dedicação na sua especialidade como ponto de partida.
+                Já se foi o tempo em que apenas uma boa qualificação técnica era
+                o suficiente para ter uma carreira sólida e tranquila.
+                Obviamente, hoje, com a maior competitividade do mercado, é
+                necessário que o profissional seja mais estratégico nas suas
+                decisões de carreira. Você e a Dra. Carla, como bons
+                profissionais que são, prezaram por anos de muito estudo e
+                dedicação na sua especialidade como ponto de partida.
               </p>
               <p className="text-base leading-5 py-2 text-darkColor">
                 O nome da Dra. Carla é fictício, mas os fatos que irei narrar na
                 sua trajetória provavelmente não parecerão mera coincidência pra
-                você. Nesta história, ela é  <span className="font-bold text-base text-darkColor">uma médica</span> mas facilmente poderia ser 
-              <span className="ml-1 font-bold text-base text-darkColor">
-                 uma cirurgiã dentista, uma enfermeira, uma fisioterapeuta ou
-                uma terapeuta ocupacional.</span> Após alguns anos de exercício da
-                profissão ela começa a fazer algumas reflexões…
+                você. Nesta história, ela é{" "}
+                <span className="font-bold text-base text-darkColor">
+                  uma médica
+                </span>{" "}
+                mas facilmente poderia ser
+                <span className="ml-1 font-bold text-base text-darkColor">
+                  uma cirurgiã dentista, uma enfermeira, uma fisioterapeuta ou
+                  uma terapeuta ocupacional.
+                </span>{" "}
+                Após alguns anos de exercício da profissão ela começa a fazer
+                algumas reflexões…
               </p>
               <p className="text-base leading-5 py-2 text text-darkColor">
                 Dra. Carla tem altíssima qualificação na sua especialidade.
-                Desde o início da carreira, decidiu empreender em sua amada profissão. Pegou suas economias investiu em seu empreendimento. Como ela tem muitas
-                aspirações para o futuro, também aceitou a oportunidade de
-                trabalhar em um grande hospital.
+                Desde o início da carreira, decidiu empreender em sua amada
+                profissão. Pegou suas economias investiu em seu empreendimento.
+                Como ela tem muitas aspirações para o futuro, também aceitou a
+                oportunidade de trabalhar em um grande hospital.
               </p>
             </div>
           </div>
@@ -214,37 +206,42 @@ export default function Home() {
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:mb-[72px]">
             <div className="col-span-4 md:col-span-8 lg:col-span-12 xl:col-span-6 xl:col-start-2 xl:col-end-6 lg:mt-[72px]">
               <p className="text-base leading-5 text-lightColor">
-                Dra. Carla atende cuidadosamente seus pacientes, desde a hora da chegada até o final do expediente,
-                com a convicção de que seu trabalho está trazendo conforto e
-                segurança para a família e tranquilidade financeira para reduzir
-                o ritmo e curtir a vida no futuro.
+                Dra. Carla atende cuidadosamente seus pacientes, desde a hora da
+                chegada até o final do expediente, com a convicção de que seu
+                trabalho está trazendo conforto e segurança para a família e
+                tranquilidade financeira para reduzir o ritmo e curtir a vida no
+                futuro.
               </p>
 
               <p className="text-base leading-5 text py-2 text-lightColor">
                 Dra. Carla tem tempo para todos os seus pacientes, mas para
-                qualquer outra coisa, alega não ter. Se ela não consegue
-                se envolver como gostaria nos problemas domésticos, menos ainda se
-                envolverá com as questões administrativas da clínica. Na prática, quem toma conta do seu negócio é a atendente.
+                qualquer outra coisa, alega não ter. Se ela não consegue se
+                envolver como gostaria nos problemas domésticos, menos ainda se
+                envolverá com as questões administrativas da clínica. Na
+                prática, quem toma conta do seu negócio é a atendente.
               </p>
               <p className="text-base leading-5 py-2 text-lightColor">
                 Certo dia, Dra. Carla resolveu parar e analisar as contas da
                 clínica. Percebeu que até então não tinha devolvido o
-                investimento. Pior, por muitas vezes tirou dinheiro da sua atividade no
-                hospital para fechar as contas da clínica, ou seja, estava
-                pagando para trabalhar. Ela entendeu que tinha investido todo
-                seu tempo para ganhar dinheiro, mas que nunca tinha dinheiro o
-                suficiente para lhe proporcionar tempo de qualidade. 
+                investimento. Pior, por muitas vezes tirou dinheiro da sua
+                atividade no hospital para fechar as contas da clínica, ou seja,
+                estava pagando para trabalhar. Ela entendeu que tinha investido
+                todo seu tempo para ganhar dinheiro, mas que nunca tinha
+                dinheiro o suficiente para lhe proporcionar tempo de qualidade. 
               </p>
             </div>
             <div className="hidden xl:flex md:col-span-8 lg:col-span-6 lg:col-start-7 mt-[72px] items-center">
-              <img src="/assets/images/tempodinheiro.png" alt="Imagem Ampulheta" />
+              <img
+                src="/assets/images/tempodinheiro.png"
+                alt="Imagem Ampulheta"
+              />
             </div>
             <div className="col-span-4 md:col-span-8 lg:col-span-12 lg:mt-6">
               <p className="text-base text-center font-bold leading-5 py-2 text-lightColor lg:col-start-4">
                 Quanto tempo e esforço Dra. Carla poderia ter poupado se tivesse
                 gerenciado melhor seu negócio?
               </p>
-              </div>
+            </div>
           </div>
         </Section>
 
@@ -268,21 +265,24 @@ export default function Home() {
               <p className="text-lightColor leading-5">
                 Dra Carla começou a perceber que sua interação com os seus
                 pacientes tinha mudado… agora ela tinha dois pacientes: um
-                virtual e outro presencial. 
+                virtual e outro presencial.
               </p>
               <p className="text-lightColor leading-5">
-              Inclusive, o hospital em que ela trabalha, antenado com o que acontece no mercado, implantou a telemedicina, bem como passou a
-                usar amplamente novas tecnologias que contribuíram reduzir custos e aumentar a eficiência da operação.
-                </p>
+                Inclusive, o hospital em que ela trabalha, antenado com o que
+                acontece no mercado, implantou a telemedicina, bem como passou a
+                usar amplamente novas tecnologias que contribuíram reduzir
+                custos e aumentar a eficiência da operação.
+              </p>
             </div>
             <div className="col-span-4 md:col-span-4 lg:col-span-6 xl:col-start-7 xl:col-end-12">
               <p className="text-lightColor leading-5">
                 A exigência cada vez maior dos stakeholders e a competitividade
                 do mercado da saúde traduziu-se em grandes movimentos de fusões
-                e aquisições. Agora, se ela quisesse fazer carreira no hospital, teria que entender de liderança e gestão de alta
-                performance, uma vez que o mercado já não permitiria gestores que
-                atuam na base da “tentativa e erro”, tomando decisões imprecisas
-                e de baixa assertividade.
+                e aquisições. Agora, se ela quisesse fazer carreira no hospital,
+                teria que entender de liderança e gestão de alta performance,
+                uma vez que o mercado já não permitiria gestores que atuam na
+                base da “tentativa e erro”, tomando decisões imprecisas e de
+                baixa assertividade.
               </p>
             </div>
           </div>
@@ -302,13 +302,13 @@ export default function Home() {
               <TextFrame>
                 <p className="font-bold text-base leading-5 mb-4">
                   Dra. Carla enfim entendeu que não estava pronta para vencer os
-                  principais desafios do mercado de saúde porque não tinha
-                  o perfil de gestão adequado, requerido pelo mercado.
+                  principais desafios do mercado de saúde porque não tinha o
+                  perfil de gestão adequado, requerido pelo mercado.
                 </p>
                 <p className="text-darkColor leading-5 mb-4">
-                   Era hora de tomar um outro rumo na
-                  carreira e na vida! Era hora de investir em quem mais entendia
-                  do seu negócio e do seu sonho: ela mesma!!!
+                  Era hora de tomar um outro rumo na carreira e na vida! Era
+                  hora de investir em quem mais entendia do seu negócio e do seu
+                  sonho: ela mesma!!!
                 </p>
                 <p className="text-darkColor leading-5 mb-4">
                   Assim como a Dra Carla, agora você tem a oportunidade de tomar
@@ -321,8 +321,7 @@ export default function Home() {
                   Saúde da Fundação Dom Cabral!!!
                 </p>
                 <p className="text-darkColor leading-5 mb-4">
-                E o melhor, sem sair do
-                  Maranhão!
+                  E o melhor, sem sair do Maranhão!
                 </p>
                 <p className="text-darkColor leading-5">
                   Essa ideia pode até lhe deixar um pouco inseguro e
@@ -332,7 +331,10 @@ export default function Home() {
               </TextFrame>
             </div>
             <div className="hidden xl:flex xl:items-center lg:col-span-6 125%:col-span-5 125%:col-start-9 lg:col-start-8 lg:col-end-12">
-              <img src="/assets/images/doctor-smiling.png" alt="Imagem doutor" />
+              <img
+                src="/assets/images/doctor-smiling.png"
+                alt="Imagem doutor"
+              />
             </div>
           </div>
         </Section>
@@ -411,6 +413,7 @@ export default function Home() {
           <div className="hidden lg:flex justify-center items-center">
             <img src="./assets/images/Estrutura.png" />
           </div>
+          <Dropdown/>
         </Section>
         <Arrow />
         <Section
@@ -548,7 +551,10 @@ export default function Home() {
           </div>
           <VideoGrid />
         </Section>
-        <Section backgroundImage="./assets/backgrounds/Infographic-bg.png" id="precos">
+        <Section
+          backgroundImage="./assets/backgrounds/Infographic-bg.png"
+          id="precos"
+        >
           <div className="bg-darkColor flex items-center xl:relative">
             <div className="py-4 lg:py-6 px-4 lg:px-20 xl:max-w-xl 2xl:max-w-3xl">
               <h2 className="text-2xl text-center md:text-start  lg:text-4xl font-bold text-lightColor mb-6 lg:mb-10">
@@ -557,7 +563,8 @@ export default function Home() {
               <div className="flex items-center mb-6">
                 <img src="./assets/svg/side-arrow-white.svg" className="mr-2" />
                 <span className="text-base text-lightColor">
-                  O curso terá como modalidade principal o Presencial, com encontros que serão realizados no campus da FDC, no Maranhão
+                  O curso terá como modalidade principal o Presencial, com
+                  encontros que serão realizados no campus da FDC, no Maranhão
                 </span>
               </div>
               <div className="flex items-center mb-6">
@@ -606,13 +613,22 @@ export default function Home() {
                   OFERTA EXCLUSIVA
                 </h2>
                 <span className="text-2xl mb-2">
-                  <span className="text-2xl 2xl:text-3xl font-bold ">R$ 37.781,10 </span>
+                  <span className="text-2xl 2xl:text-3xl font-bold ">
+                    R$ 37.781,10{" "}
+                  </span>
                   à vista
                 </span>
-                <span className="text-base mb-2 fontb">OU PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
-                <span className="text-sm mb-10 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
-                  <Button href="https://inscricao.fdc.org.br/FichaInscricao.aspx?CrmLanguage=pt&CrmProg=%7b338BCC0B-1299-E911-9FC6-00505698001D%7d&CrmEd=02a1545d-294b-ed11-b221-00505698001d" text="QUERO ME INSCREVER AGORA" />
-                  <Button href="google.com" text="FALE COM UM ESPECIALISTA!" />
+                <span className="text-base mb-2 fontb">
+                  OU PARCELADO EM ATÉ 3 VEZES SEM JUROS
+                </span>
+                <span className="text-sm mb-10 font-thin">
+                  Valor integral: R$41,979.00 | Parcelado em até 24x*
+                </span>
+                <Button
+                  href="https://inscricao.fdc.org.br/FichaInscricao.aspx?CrmLanguage=pt&CrmProg=%7b338BCC0B-1299-E911-9FC6-00505698001D%7d&CrmEd=02a1545d-294b-ed11-b221-00505698001d"
+                  text="QUERO ME INSCREVER AGORA"
+                />
+                <Button href="google.com" text="FALE COM UM ESPECIALISTA!" />
                 <span className="text-2xl text-primaryBlue font-bold my-4">
                   Garanta logo a sua vaga
                 </span>
@@ -626,13 +642,25 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-center text-lightColor mt-8">
               OFERTA EXCLUSIVA
             </h2>
-            <span className="text-2xl font-bold mt-4">R$ 37,781.10 à vista</span>
-            <span className="text-base mt-2 mb-4">PARCELADO EM ATÉ 3 VEZES SEM JUROS</span>
-            <span className="text-sm mb-8 font-thin">Valor integral: R$41,979.00 | Parcelado em até 24x*</span>
-              <div className="flex flex-col justify-around">
-              <Button href="https://inscricao.fdc.org.br/FichaInscricao.aspx?CrmLanguage=pt&CrmProg=%7b338BCC0B-1299-E911-9FC6-00505698001D%7d&CrmEd=02a1545d-294b-ed11-b221-00505698001d" text="QUERO ME INSCREVER AGORA"/>
-              <Button href="https://google.com" text="FALE COM UM ESPECIALISTA" />
-              </div>
+            <span className="text-2xl font-bold mt-4">
+              R$ 37,781.10 à vista
+            </span>
+            <span className="text-base mt-2 mb-4">
+              PARCELADO EM ATÉ 3 VEZES SEM JUROS
+            </span>
+            <span className="text-sm mb-8 font-thin">
+              Valor integral: R$41,979.00 | Parcelado em até 24x*
+            </span>
+            <div className="flex flex-col justify-around">
+              <Button
+                href="https://inscricao.fdc.org.br/FichaInscricao.aspx?CrmLanguage=pt&CrmProg=%7b338BCC0B-1299-E911-9FC6-00505698001D%7d&CrmEd=02a1545d-294b-ed11-b221-00505698001d"
+                text="QUERO ME INSCREVER AGORA"
+              />
+              <Button
+                href="https://google.com"
+                text="FALE COM UM ESPECIALISTA"
+              />
+            </div>
             <span className="text-2xl text-lightColor font-bold mb-2">
               Garanta logo a sua vaga
             </span>
