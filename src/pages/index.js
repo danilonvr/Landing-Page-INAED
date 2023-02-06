@@ -413,7 +413,11 @@ export default function Home() {
           <div className="hidden lg:flex justify-center items-center">
             <img src="./assets/images/Estrutura.png" />
           </div>
-          <Dropdown/>
+          <div className="px-4 md:px-20 my-4 md:my-6 lg:my-8 flex flex-col justify-center">
+            <h2 className="text-2xl text-lightColor" >O que você vai aprender?</h2>
+            <Dropdown/>
+          </div>
+        
         </Section>
         <Arrow />
         <Section
