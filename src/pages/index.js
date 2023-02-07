@@ -414,9 +414,12 @@ export default function Home() {
             <img src="./assets/images/Estrutura.png" />
           </div>
           <div className="px-4 md:px-20 my-4 md:my-6 lg:my-8 flex flex-col justify-center">
-            <h2 className="text-2xl text-lightColor font-bold my-4 md:my-6">
+            <h2 className="text-2xl text-lightColor font-bold">
               O que você vai aprender?
             </h2>
+            <span className="font-light text-lightColor mb-4 md:mb-6">
+              Clique sobre os módulos para visualizar as disciplinas:
+            </span>
             <Dropdown />
           </div>
         </Section>
