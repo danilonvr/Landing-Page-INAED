@@ -263,7 +263,7 @@ export default function Home() {
           <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6 lg:my-[72px]">
             <div className="col-span-4 md:col-span-4 lg:col-span-6 xl:col-start-2 xl:col-end-6">
               <p className="text-lightColor leading-5">
-                Dra Carla começou a perceber que sua interação com os seus
+                Dra. Carla começou a perceber que sua interação com os seus
                 pacientes tinha mudado… agora ela tinha dois pacientes: um
                 virtual e outro presencial.
               </p>
@@ -311,7 +311,7 @@ export default function Home() {
                   sonho: ela mesma!!!
                 </p>
                 <p className="text-darkColor leading-5 mb-4">
-                  Assim como a Dra Carla, agora você tem a oportunidade de tomar
+                  Assim como a Dra. Carla, agora você tem a oportunidade de tomar
                   um novo caminho… uma jornada em busca de competências que
                   podem encurtar, e muito, a sua trajetória rumo ao sucesso e à
                   tranquilidade.
