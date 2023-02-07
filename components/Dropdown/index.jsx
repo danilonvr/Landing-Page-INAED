@@ -125,10 +125,16 @@ const Dropdown = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <Box>
-                1. Abertura e Integração da Turma-Ofi cina Mindset Global
+            <Box>
+                1. Gestão de Projetos
               </Box>
-              <Box my={2}>Carga Horária: 15 Horas</Box>
+              <Box>
+               2. Gestão de Mudanças
+              </Box>
+              <Box>
+                3. Apresentação da Metodologia dos Projetos Aplicativos - Aula Remota ao vivo
+              </Box>
+              <Box my={2}>Carga horária total: 136 Horas</Box>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
