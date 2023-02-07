@@ -81,12 +81,12 @@ export default function Home() {
                 <img
                   src="/assets/logos/logo.svg"
                   alt="Logo"
-                  className="hidden lg:block lg:w-40"
+                  className="hidden lg:block lg:w-2/3"
                 />
               </div>
               <div className="flex justify-center items-center">
                 <img
-                  src="/assets/logos/logo.svg"
+                  src="/assets/logos/logo-pos.png"
                   alt="Logo Pós"
                   className="w-2/3 self-center"
                 />
@@ -133,7 +133,7 @@ export default function Home() {
                   background="rgba(33, 39, 56, 0.25)"
                   className="flex flex-col justify-center items-center"
                 >
-                  <Timer endDate="2023-04-14T23:59:59" />
+                  <Timer endDate="2023-03-31T23:59:59" />
                   <span className="hidden md:block md:mt-2 font-bold text-base">
                     Para você garantir a sua vaga. Não perca!
                   </span>
@@ -610,13 +610,13 @@ export default function Home() {
                 </span>
               </div>
               <Glass className="w-fit md:max-w-xl">
-                <Timer endDate="2023-04-14T23:59:59" />
+                <Timer endDate="2023-03-31T23:59:59" />
               </Glass>
               <Glass
                 background="rgba(15, 56, 67, 0.7)"
                 className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center xl:absolute xl:-top-10 xl:right-10"
               >
-                <img src="./assets/logos/logo.svg" className="mb-8 mt-20" />
+                <img src="./assets/logos/logo-pos.png" className="mb-8 mt-20 w-2/3" />
                 <h2 className="text-2xl 2xl:text-3xl text-primaryGreen font-bold mb-8">
                   OFERTA EXCLUSIVA
                 </h2>
