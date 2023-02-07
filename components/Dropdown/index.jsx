@@ -13,8 +13,8 @@ const Dropdown = () => {
   return (
     <>
       <DropdownContainer>
-        <Accordion defaultIndex={[0]} allowMultiple m={0}>
-          <AccordionItem>
+        <Accordion allowMultiple m={0}>
+          <AccordionItem className="mb-4 md:mb-6 lg:mb-0">
             <h2>
               <AccordionButton
                 _expanded={{
@@ -24,7 +24,7 @@ const Dropdown = () => {
                 }}
               >
                 <Box as="span" flex="1" textAlign="left" fontWeight="bold">
-                  Módulo I
+                  Módulo I - Visão Sistêmica da Organização no Novo Cenário da Saúde
                 </Box>
                 <div>
                   <img
@@ -60,7 +60,7 @@ const Dropdown = () => {
                 }}
               >
                 <Box as="span" flex="1" textAlign="left"  fontWeight="bold">
-                  Módulo II
+                  Módulo II - Estratégia Corporativa em Saúde
                 </Box>
                 <div>
                   <img
@@ -114,7 +114,7 @@ const Dropdown = () => {
                 }}
               >
                 <Box as="span" flex="1" textAlign="left"  fontWeight="bold">
-                  Módulo III
+                  Módulo III - Desenvolvimento de Projetos
                 </Box>
                 <div>
                   <img
@@ -134,7 +134,7 @@ const Dropdown = () => {
               <Box>
                 3. Apresentação da Metodologia dos Projetos Aplicativos - Aula Remota ao vivo
               </Box>
-              <Box my={2}>Carga horária total: 136 Horas</Box>
+              <Box my={2}>Carga horária total: 34 Horas</Box>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
@@ -147,7 +147,7 @@ const Dropdown = () => {
                 }}
               >
                 <Box as="span" flex="1" textAlign="left"  fontWeight="bold">
-                  Módulo IV
+                  Módulo IV - Estratégia Assistencial
                 </Box>
                 <div>
                   <img
@@ -158,10 +158,47 @@ const Dropdown = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <Box>
-                1. Abertura e Integração da Turma-Ofi cina Mindset Global
+            <Box>
+                1. Governança Clínica
               </Box>
-              <Box my={2}>Carga Horária: 15 Horas</Box>
+              <Box>
+               2. Gestão de Riscos Assistenciais e Segurança do Paciente
+              </Box>
+              <Box>
+                3. Oficina de Praticagem I - Aula Remota ao vivo
+              </Box>
+              <Box>
+                4. Desenvolvimento de Lideranças e Equipes de Alta Performance
+              </Box>
+              <Box>
+               5. Implementação de Processos Lean e Metodologias Ágeis
+              </Box>
+              <Box>
+                6. Oficina de Praticagem II - Aula Remota ao vivo
+              </Box>
+              <Box>
+               7. Análise de Performance e Tomada de Decisão
+              </Box>
+              <Box>
+                8. Experiência do Paciente e do Profissional de Saúde 
+              </Box>
+              <Box>
+               9. Educação Permanente e Melhoria Contínua em Saúde
+              </Box>
+              <Box>
+                10. Oficina de Praticagem III - Aula Remota ao vivo
+              </Box>
+              <Box>
+                11. Modelos de Sustentabilidade na Saúde
+              </Box>
+              <Box>
+                12. Hotelaria para Experiências Customizadas do Paciente - Aula Remota ao vivo
+              </Box>
+              <Box>
+                13. Farmácia e Suprimentos para Apoio Integrado a Assistência - Aula Remota ao vivo
+
+              </Box>
+              <Box my={2}>Carga horária total: 142 Horas</Box>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
@@ -174,7 +211,7 @@ const Dropdown = () => {
                 }}
               >
                 <Box as="span" flex="1" textAlign="left"  fontWeight="bold">
-                  Módulo V
+                  Módulo V - Aplicação da Aprendizagem
                 </Box>
                 <div>
                   <img
@@ -185,7 +222,10 @@ const Dropdown = () => {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              
+            <Box>
+            Apresentação dos Projetos Aplicativos - Encerramento
+              </Box>
+              <Box my={2}>Carga horária total: 6 Horas</Box>
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
