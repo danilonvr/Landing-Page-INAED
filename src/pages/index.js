@@ -14,12 +14,6 @@ export default function Home() {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    @media screen and (min-width: 1536px) and (max-width: 1920px) {
-      height: 100vh;
-    }
-    /* @media screen and (min-width: 1920px) {
-      height: 831px;
-    } */
   `;
 
   const VerticalLine = styled.div`
@@ -74,21 +68,21 @@ export default function Home() {
       </Head>
 
       <main>
-        <HeroSection className="px-4 py-4 md:px-20 md:py-6">
+        <HeroSection className="px-4 py-4 md:px-20">
           <header>
             <div className="flex lg:justify-between items-center">
               <div>
                 <img
                   src="/assets/logos/logo.svg"
                   alt="Logo"
-                  className="hidden lg:block lg:w-2/3"
+                  className="hidden lg:block lg:w-60"
                 />
               </div>
               <div className="flex justify-center items-center">
                 <img
                   src="/assets/logos/logo-pos.png"
                   alt="Logo Pós"
-                  className="w-2/3 self-center"
+                  className="w-60 self-center"
                 />
               </div>
               <div className="hidden md:inline ">
@@ -96,7 +90,7 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <div className=" mt-8 grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-4 md:gap-6">
+          <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-4 md:gap-6">
             <div className="flex flex-col justify-center col-span-4 md:col-span-8 lg:col-span-12 2xl:col-span-5 125%:col-span-7">
               <h1 className="text-3xl 125%:text-3xl lg:text-4xl font-bold text-primaryGreen">
                 Veja no que você precisa investir para ser um profissional de
@@ -141,11 +135,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden 2xl:flex items-center  2xl:col-start-8 xl:col-span-6 xl:col-start-8 2xl:col-span-7 125%:col-start-8 w-full">
+            <div className="hidden 2xl:flex items-end 2xl:col-start-8 xl:col-span-6 xl:col-start-8 2xl:col-span-7 125%:col-start-8 h-full">
               <img
-                src="/assets/images/doctor.png"
+                src="/assets/images/doctor-2.png"
                 alt="Imagem Doutor"
-                className="125%:pt-10 w-fit object-fill"
+                className="object-fill"
               />
             </div>
           </div>
@@ -614,9 +608,9 @@ export default function Home() {
               </Glass>
               <Glass
                 background="rgba(15, 56, 67, 0.7)"
-                className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center xl:absolute xl:-top-10 xl:right-10"
+                className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center xl:absolute xl:-top-10 125%:-top-20 xl:right-10"
               >
-                <img src="./assets/logos/logo-pos.png" className="mb-8 mt-20 w-2/3" />
+                <img src="./assets/logos/logo-pos.png" className="mb-8 mt-20 w-60" />
                 <h2 className="text-2xl 2xl:text-3xl text-primaryGreen font-bold mb-8">
                   OFERTA EXCLUSIVA
                 </h2>
