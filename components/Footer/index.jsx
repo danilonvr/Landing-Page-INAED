@@ -11,7 +11,7 @@ const FooterContainer = styled.div`
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: .5rem;
     letter-spacing: 1px;
     text-align: center;
     padding: 2rem 0;
