@@ -14,24 +14,26 @@ const YouTubeVideo = ({ id }) => (
 
 const VideoGrid = () => (
   <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 mb-20">
-    <div className="md:flex md:justify-center lg:block mb-10">
-    <YouTubeVideo id="ye-ehbVt00E"/>
-    </div>
-    <div className="md:flex md:justify-center lg:block">
-    <YouTubeVideo id="IhpCv7g2wz0"/>
-    </div>
     <div className='md:flex md:justify-center lg:block'>
     <YouTubeVideo id="8lxBi8Sywj0" />
     </div>
     <div className='md:flex md:justify-center lg:block'>
-    <YouTubeVideo id="NywteBw1P7M" />
+    <YouTubeVideo id="KZIztiHsbUs" />
     </div>
     <div className='md:flex md:justify-center lg:block'>
     <YouTubeVideo id="u8AgFEW70fg" />
     </div>
-    <div className='md:flex md:justify-center lg:block'>
-    <YouTubeVideo id="KZIztiHsbUs" />
+    <div className="md:flex md:justify-center lg:block">
+    <YouTubeVideo id="IhpCv7g2wz0"/>
     </div>
+    <div className="md:flex md:justify-center lg:block mb-10">
+    <YouTubeVideo id="ye-ehbVt00E"/>
+    </div>
+    <div className='md:flex md:justify-center lg:block'>
+    <YouTubeVideo id="NywteBw1P7M" />
+    </div>
+   
+   
   </div>
 );
 
